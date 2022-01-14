@@ -9,10 +9,20 @@
 position = Vector2( 514, 588 )
 scale = Vector2( 0.513672, 46 )
 
+[node name="blob" parent="." instance=ExtResource( 2 )]
+position = Vector2( 45, 556 )
+gravity_scale = 3.0
+
 [node name="Sprite" parent="." instance=ExtResource( 1 )]
 position = Vector2( 510.75, 6 )
 scale = Vector2( 0.510986, 71 )
 
-[node name="RigidBody2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( 476, 142 )
-gravity_scale = 3.0
+[node name="Sprite3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1026, 341 )
+rotation = 1.5708
+scale = Vector2( 0.510986, 71 )
+
+[node name="Sprite4" parent="." instance=ExtResource( 1 )]
+position = Vector2( -1.99997, 295 )
+rotation = 1.5708
+scale = Vector2( 0.510986, 71 )
