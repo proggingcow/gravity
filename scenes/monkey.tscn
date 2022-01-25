@@ -7,7 +7,7 @@
 bounce = 0.2
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 5, 0.75 )
+extents = Vector2( 5, 0.6875 )
 
 [node name="RigidBody2D" type="RigidBody2D"]
 collision_layer = 33
@@ -23,6 +23,7 @@ polygon = PoolVector2Array( -9, 5, -5, 10, 5, 10, 9, 6, 9, 2, 8, 1, 8, 0, 7, -2,
 
 [node name="Feet" type="Area2D" parent="."]
 collision_layer = 3
+collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Feet"]
 position = Vector2( 0, 11 )
