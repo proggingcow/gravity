@@ -11,8 +11,17 @@ config_version=4
 [application]
 
 config/name="Gravity"
-run/main_scene="res://scenes/main.tscn"
+run/main_scene="res://scenes/levels/level1.tscn"
 config/icon="res://icon.png"
+
+[layer_names]
+
+2d_render/layer_1="Physics"
+2d_render/layer_4="Death"
+2d_render/layer_6="Exit"
+2d_physics/layer_1="Physics"
+2d_physics/layer_4="Death"
+2d_physics/layer_6="Exit"
 
 [physics]
 

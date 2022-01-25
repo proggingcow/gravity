@@ -1,0 +1,109 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/monkey.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/box.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=5]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 514, 588 )
+scale = Vector2( 0.513672, 46 )
+
+[node name="Sprite" parent="." instance=ExtResource( 3 )]
+position = Vector2( 510.75, 6 )
+scale = Vector2( 0.510986, 71 )
+
+[node name="blob" parent="." instance=ExtResource( 2 )]
+position = Vector2( 51, 550 )
+gravity_scale = 3.0
+
+[node name="Sprite3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1093, 327 )
+rotation = 1.5708
+scale = Vector2( 0.510986, 71 )
+
+[node name="Sprite4" parent="." instance=ExtResource( 3 )]
+position = Vector2( -1.99997, 295 )
+rotation = 1.5708
+scale = Vector2( 0.510986, 71 )
+
+[node name="box" parent="." instance=ExtResource( 4 )]
+position = Vector2( 616, 551 )
+
+[node name="Sprite5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 382, 500 )
+scale = Vector2( 0.033966, 37.5 )
+
+[node name="Sprite6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 248, 444 )
+scale = Vector2( 0.0234985, 34.5 )
+
+[node name="Sprite7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 503, 246 )
+rotation = -0.785398
+scale = Vector2( 0.187012, -24 )
+
+[node name="Sprite9" parent="." instance=ExtResource( 3 )]
+position = Vector2( 979.651, 546.485 )
+rotation = 1.5708
+scale = Vector2( 0.0531338, 169.778 )
+
+[node name="Sprite10" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1029.04, 219.969 )
+rotation = 1.5708
+scale = Vector2( 0.187365, 71 )
+
+[node name="Sprite11" parent="." instance=ExtResource( 3 )]
+position = Vector2( 440.844, 424.318 )
+rotation = 1.5708
+scale = Vector2( 0.0922426, 70.0569 )
+
+[node name="Sprite12" parent="." instance=ExtResource( 3 )]
+position = Vector2( 461.243, 318.192 )
+rotation = 1.5708
+scale = Vector2( 0.0289931, 29.988 )
+
+[node name="Sprite13" parent="." instance=ExtResource( 3 )]
+position = Vector2( 444, 335 )
+rotation = 1.5708
+scale = Vector2( 0.0179446, 15.8457 )
+
+[node name="Area2D" parent="." instance=ExtResource( 1 )]
+position = Vector2( 889, 555 )
+
+[node name="Area2D2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 879, 555 )
+
+[node name="Area2D3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 869, 555 )
+
+[node name="Area2D4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 859, 555 )
+
+[node name="Sprite14" parent="." instance=ExtResource( 3 )]
+position = Vector2( 872, 468 )
+rotation = 0.785398
+scale = Vector2( 0.0476277, 22.1308 )
+
+[node name="TextEdit" type="TextEdit" parent="."]
+margin_left = 37.0
+margin_top = 45.0
+margin_right = 213.0
+margin_bottom = 135.0
+text = "
+      arrow keys for 
+      moving your blob"
+context_menu_enabled = false
+shortcut_keys_enabled = false
+virtual_keyboard_enabled = false
+selecting_enabled = false
+caret_moving_by_right_click = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExitArea" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1093, 452 )

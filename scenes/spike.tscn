@@ -2,8 +2,9 @@
 
 [ext_resource path="res://assets/spike.png" type="Texture" id=1]
 
-[node name="Area2D" type="Area2D"]
-collision_layer = 17
+[node name="Spike" type="Area2D"]
+collision_layer = 8
+collision_mask = 8
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 polygon = PoolVector2Array( -5, 10, 5, 10, 5, 6, 1, -9, -1, -9, -5, 6 )
