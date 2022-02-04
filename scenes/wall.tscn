@@ -11,6 +11,7 @@ gradient = SubResource( 1 )
 extents = Vector2( 1022.99, 0.503759 )
 
 [node name="Sprite" type="Sprite"]
+light_mask = 3
 position = Vector2( -7, 130 )
 scale = Vector2( 0.991211, 266 )
 texture = SubResource( 2 )

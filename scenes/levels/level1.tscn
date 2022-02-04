@@ -8,6 +8,11 @@
 
 [node name="Node2D" type="Node2D"]
 
+[node name="Area2D5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 826, 422 )
+rotation = -0.785398
+scale = Vector2( 2, 2 )
+
 [node name="Area2D" parent="." instance=ExtResource( 1 )]
 position = Vector2( 889, 555 )
 
@@ -20,11 +25,6 @@ position = Vector2( 869, 555 )
 [node name="Area2D4" parent="." instance=ExtResource( 1 )]
 position = Vector2( 859, 555 )
 
-[node name="Area2D5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 824, 420 )
-rotation = -0.785398
-scale = Vector2( 2, 2 )
-
 [node name="Sprite2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 514, 588 )
 scale = Vector2( 0.513672, 46 )
@@ -36,15 +36,10 @@ scale = Vector2( 0.510986, 71 )
 [node name="blob" parent="." instance=ExtResource( 2 )]
 position = Vector2( 51, 550 )
 
-[node name="Sprite3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1093, 327 )
-rotation = 1.5708
-scale = Vector2( 0.510986, 71 )
-
 [node name="Sprite4" parent="." instance=ExtResource( 3 )]
-position = Vector2( -1.99997, 295 )
+position = Vector2( -2, 304.62 )
 rotation = 1.5708
-scale = Vector2( 0.510986, 71 )
+scale = Vector2( 0.293818, 71 )
 
 [node name="box" parent="." instance=ExtResource( 4 )]
 position = Vector2( 626, 553 )
@@ -92,17 +87,6 @@ position = Vector2( 872, 468 )
 rotation = 0.785398
 scale = Vector2( 0.0476277, 22.1308 )
 
-[node name="TextEdit" type="RichTextLabel" parent="."]
-margin_left = 47.0
-margin_top = 48.0
-margin_right = 223.0
-margin_bottom = 138.0
-text = "
-      arrow keys for 
-      moving your blob"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="ExitArea" parent="." instance=ExtResource( 5 )]
-position = Vector2( 214, 526 )
+position = Vector2( 1092, 450 )
+target = "level_chooser"

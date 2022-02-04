@@ -15,12 +15,14 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
+func _input(event):
+	if event is InputEventKey:
+		if event.pressed and event.scancode == KEY_ESCAPE:
+			get_tree().change_scene("res://scenes/levels/level_chooser.tscn")
 
 
 
 
 func _on_ExitArea_body_entered(body):
-	print(target)
 	get_tree().change_scene("res://scenes/levels/" + target + ".tscn")
 
