@@ -1,0 +1,98 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/monkey.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/deathball.tscn" type="PackedScene" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite" parent="." instance=ExtResource( 1 )]
+position = Vector2( 502, 600 )
+scale = Vector2( 0.517578, 33 )
+
+[node name="Sprite2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 556.998, 600.042 )
+rotation = -0.523599
+scale = Vector2( 0.545777, 534.765 )
+
+[node name="Sprite3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 304, -1924.75 )
+scale = Vector2( 0.299805, 3882.5 )
+
+[node name="Sprite4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1025, 248.75 )
+scale = Vector2( 0.0151367, 727.5 )
+
+[node name="Sprite5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 245.75 )
+scale = Vector2( 0.0151367, 733.5 )
+
+[node name="blob" parent="." instance=ExtResource( 3 )]
+position = Vector2( 46, 554 )
+
+[node name="ExitArea" parent="." instance=ExtResource( 2 )]
+position = Vector2( 972, -68 )
+target = "level_chooser"
+
+[node name="RigidBody2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 671, -245 )
+rotation = -0.523599
+
+[node name="RigidBody2D2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 724, -889 )
+rotation = -0.523599
+
+[node name="RigidBody2D3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 674, -1572 )
+rotation = -0.523599
+
+[node name="RigidBody2D4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 758, -2226 )
+rotation = -0.523599
+
+[node name="RigidBody2D5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 664, -2866 )
+rotation = -0.523599
+
+[node name="RigidBody2D6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 674, -3634 )
+rotation = -0.523599
+
+[node name="Sprite7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 786, -819 )
+rotation = -0.523599
+scale = Vector2( 0.0955458, 63.7766 )
+
+[node name="Sprite8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 623, -160 )
+rotation = 0.523599
+scale = Vector2( 0.0868638, 63.7766 )
+
+[node name="Sprite9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 753, -3552 )
+rotation = -0.523599
+scale = Vector2( 0.0955458, 63.7766 )
+
+[node name="Sprite10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 815, -2175 )
+rotation = -0.523599
+scale = Vector2( 0.0955458, 63.7766 )
+
+[node name="Sprite11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 617, -1477 )
+rotation = 0.523599
+scale = Vector2( 0.0868638, 63.7766 )
+
+[node name="Sprite12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 628, -2794 )
+rotation = 0.523599
+scale = Vector2( 0.0868638, 63.7766 )
+
+[node name="Sprite6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 858, -2035 )
+scale = Vector2( 0.0732422, 4076 )
+
+[node name="Sprite13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 946, 1582.25 )
+scale = Vector2( 0.0732422, 3074.5 )

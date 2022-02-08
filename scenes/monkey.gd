@@ -3,7 +3,11 @@ extends RigidBody2D
 func _input(event):
 	if event is InputEventKey :
 		if event.pressed and event.scancode == KEY_UP and ($Feet.get_overlapping_bodies().size() > 0) :
-				apply_central_impulse(Vector2(0,-200))
+			apply_central_impulse(Vector2(0,-200))
+		if event.pressed and event.scancode == KEY_R:
+			get_tree().reload_current_scene()
+		if event.pressed and event.scancode == KEY_Q:
+			get_tree().quit()
 
 func _physics_process(delta):
 	if linear_velocity.y < - 210:
@@ -24,10 +28,7 @@ func _process(_delta):
 
 func _on_Suround_area_entered(_b):
 	get_tree().reload_current_scene()
-	
-#var game = preload ("the path to your scene"). instance ()
-#gettree (). getroot (). add_child (game)
-#hide ()
+
 
 
 func _on_Area2D5_area_entered(area):

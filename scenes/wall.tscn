@@ -8,16 +8,15 @@ colors = PoolColorArray( 0.284546, 0.984375, 0, 1 )
 gradient = SubResource( 1 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 1022.99, 0.503759 )
+extents = Vector2( 1024, 0.5 )
 
 [node name="Sprite" type="Sprite"]
-light_mask = 3
-position = Vector2( -7, 130 )
 scale = Vector2( 0.991211, 266 )
 texture = SubResource( 2 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -1.00739, 0 )
+position = Vector2( 2.5737e-05, -4.43674e-08 )
+scale = Vector2( 1, 1 )
 shape = SubResource( 3 )

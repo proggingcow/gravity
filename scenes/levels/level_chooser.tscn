@@ -6,47 +6,53 @@
 
 [node name="Node2D" type="Node2D"]
 
+[node name="TextEdit" type="RichTextLabel" parent="."]
+margin_left = 49.0
+margin_top = 41.0
+margin_right = 309.0
+margin_bottom = 411.0
+text = "
+      Arrow keys for 
+      moving your blob.
+	  Press r to restart level.
+	  Press escape to return to
+	  here.
+	
+	"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="ExitArea" parent="." instance=ExtResource( 3 )]
 position = Vector2( 72, 675 )
 target = "level1"
 
 [node name="ExitArea2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 301, 675 )
+position = Vector2( 512, 676 )
 target = "level3"
 
 [node name="blob" parent="." instance=ExtResource( 1 )]
-position = Vector2( 163, -276 )
+position = Vector2( 163, -100 )
 
 [node name="Sprite" parent="." instance=ExtResource( 2 )]
 position = Vector2( 700, -194.5 )
 scale = Vector2( 0.390625, 445 )
 
 [node name="Sprite3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 909.5, 308 )
-scale = Vector2( 0.130371, 694 )
+position = Vector2( 901, 308 )
+scale = Vector2( 0.138672, 694 )
 
 [node name="Sprite4" parent="." instance=ExtResource( 2 )]
 position = Vector2( 0, 301.5 )
 scale = Vector2( 0.0253906, 681 )
 
 [node name="ExitArea3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 514, 675 )
+position = Vector2( 722, 673 )
 
 [node name="Sprite5" parent="." instance=ExtResource( 2 )]
 position = Vector2( 187, 560 )
 scale = Vector2( 0.0673828, 172 )
-
-[node name="TextEdit" type="RichTextLabel" parent="."]
-margin_left = 47.0
-margin_top = 48.0
-margin_right = 223.0
-margin_bottom = 138.0
-text = "
-      arrow keys for 
-      moving your blob"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Sprite6" parent="." instance=ExtResource( 2 )]
 position = Vector2( 406, 560 )
@@ -69,7 +75,7 @@ margin_right = 544.0
 margin_bottom = 532.0
 text = "Level 3"
 __meta__ = {
-"_edit_use_anchors_": true
+"_edit_use_anchors_": false
 }
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="."]
@@ -87,7 +93,7 @@ position = Vector2( -360, -196 )
 scale = Vector2( 0.390625, 448 )
 
 [node name="ExitArea4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 735, 661 )
+position = Vector2( 295, 682 )
 target = "level4"
 
 [node name="Sprite7" parent="." instance=ExtResource( 2 )]
@@ -97,10 +103,14 @@ scale = Vector2( 0.0673828, 178 )
 [node name="RichTextLabel4" type="RichTextLabel" parent="."]
 margin_left = 715.0
 margin_top = 509.0
-margin_right = 765.0
-margin_bottom = 529.0
+margin_right = 775.0
+margin_bottom = 539.0
 text = "Level 4
 "
 __meta__ = {
-"_edit_use_anchors_": true
+"_edit_use_anchors_": false
 }
+
+[node name="ExitArea5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 183, -335 )
+target = "level5"
