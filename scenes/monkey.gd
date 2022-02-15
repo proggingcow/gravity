@@ -8,6 +8,8 @@ func _input(event):
 			get_tree().reload_current_scene()
 		if event.pressed and event.scancode == KEY_Q:
 			get_tree().quit()
+		if event.pressed and event.scancode == KEY_F:
+			OS.window_fullscreen = !OS.window_fullscreen
 
 func _physics_process(delta):
 	if linear_velocity.y < - 210:

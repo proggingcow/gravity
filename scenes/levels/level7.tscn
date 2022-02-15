@@ -1,0 +1,90 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/monkey.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/ceartainonly.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/deathball.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/enemy.tscn" type="PackedScene" id=6]
+
+[sub_resource type="PhysicsMaterial" id=1]
+friction = 0.0
+rough = true
+bounce = 1.0
+
+[node name="Node2D" type="Node2D"]
+__meta__ = {
+"_edit_horizontal_guides_": [  ]
+}
+
+[node name="blob" parent="." instance=ExtResource( 1 )]
+position = Vector2( 86, 551 )
+
+[node name="ExitArea" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1078, 534 )
+scale = Vector2( 1, 20 )
+target = "level_chooser"
+
+[node name="Sprite" parent="." instance=ExtResource( 3 )]
+position = Vector2( 512, 597.5 )
+scale = Vector2( 0.5, 47 )
+
+[node name="ceartainonly" parent="." instance=ExtResource( 4 )]
+position = Vector2( -617, 287.625 )
+scale = Vector2( 0.603027, 587.25 )
+
+[node name="ceartainonly2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1642, 287.125 )
+scale = Vector2( 0.603027, 574.25 )
+
+[node name="Sprite2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 10041, 189 )
+scale = Vector2( 2, 2 )
+
+[node name="RigidBody2D" parent="Sprite2" instance=ExtResource( 5 )]
+position = Vector2( -4535, 182.5 )
+physics_material_override = SubResource( 1 )
+linear_velocity = Vector2( -100, 0 )
+
+[node name="RigidBody2D2" parent="Sprite2" instance=ExtResource( 5 )]
+position = Vector2( -4755.5, 181.5 )
+physics_material_override = SubResource( 1 )
+linear_velocity = Vector2( -100, 0 )
+
+[node name="RigidBody2D3" parent="Sprite2" instance=ExtResource( 5 )]
+position = Vector2( -4659.5, 180 )
+physics_material_override = SubResource( 1 )
+linear_velocity = Vector2( -100, 0 )
+
+[node name="RigidBody2D4" parent="Sprite2" instance=ExtResource( 5 )]
+position = Vector2( -4535, 18 )
+physics_material_override = SubResource( 1 )
+linear_velocity = Vector2( -100, 0 )
+
+[node name="RigidBody2D5" parent="Sprite2" instance=ExtResource( 5 )]
+position = Vector2( -4777.5, 137.5 )
+physics_material_override = SubResource( 1 )
+linear_velocity = Vector2( -100, 0 )
+
+[node name="RigidBody2D9" parent="Sprite2" instance=ExtResource( 5 )]
+position = Vector2( -4587.5, 25.5 )
+physics_material_override = SubResource( 1 )
+linear_velocity = Vector2( -100, 0 )
+
+[node name="RigidBody2D10" parent="Sprite2" instance=ExtResource( 5 )]
+position = Vector2( -4597.5, 122 )
+physics_material_override = SubResource( 1 )
+linear_velocity = Vector2( -100, 0 )
+
+[node name="RigidBody2D11" parent="Sprite2" instance=ExtResource( 5 )]
+position = Vector2( -4916, 124.5 )
+physics_material_override = SubResource( 1 )
+linear_velocity = Vector2( -100, 0 )
+
+[node name="RigidBody2D12" parent="Sprite2" instance=ExtResource( 5 )]
+position = Vector2( -4981.5, 125 )
+physics_material_override = SubResource( 1 )
+linear_velocity = Vector2( -100, 0 )
+
+[node name="RigidBody2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( 652, 542 )

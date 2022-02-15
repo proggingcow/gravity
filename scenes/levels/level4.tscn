@@ -58,3 +58,7 @@ scale = Vector2( 0.112, 2 )
 [node name="Sprite10" parent="." instance=ExtResource( 2 )]
 position = Vector2( 796, 346 )
 scale = Vector2( 0.112, 2 )
+
+[node name="Sprite11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 616, 512 )
+scale = Vector2( 0.112, 2 )

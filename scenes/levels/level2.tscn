@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/monkey.tscn" type="PackedScene" id=2]
@@ -6,6 +6,10 @@
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/box.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/vine.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/deathball.tscn" type="PackedScene" id=7]
+
+[sub_resource type="PhysicsMaterial" id=1]
+bounce = 0.2
 
 [node name="Node2D" type="Node2D"]
 
@@ -116,3 +120,8 @@ scale = Vector2( 0.172495, 15 )
 position = Vector2( 476.806, 132.195 )
 rotation = -0.785398
 scale = Vector2( 0.055455, 15 )
+
+[node name="RigidBody2D3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 257, 570 )
+physics_material_override = SubResource( 1 )
+linear_velocity = Vector2( -155, 0 )
