@@ -21,7 +21,9 @@ func _process(_delta):
 		apply_central_impulse(Vector2(-3,0))
 		if $Feet.get_overlapping_bodies().size()>0:
 			apply_central_impulse(Vector2(-7,3))
-	
+			
+	if Input.is_key_pressed(KEY_DOWN):
+		apply_central_impulse(Vector2(0,10))
 	
 	if Input.is_key_pressed(KEY_RIGHT):
 		apply_central_impulse(Vector2(3,0))

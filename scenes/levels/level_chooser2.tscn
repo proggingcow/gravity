@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/monkey.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/vine.tscn" type="PackedScene" id=4]
 
 [node name="Node2D" type="Node2D"]
 
@@ -26,11 +27,11 @@ target = "level_chooser"
 
 [node name="ExitArea2" parent="." instance=ExtResource( 2 )]
 position = Vector2( -73, 308 )
-target = "level_chooser"
+target = "level8"
 
 [node name="ExitArea3" parent="." instance=ExtResource( 2 )]
-position = Vector2( -44, 468 )
-target = "level_chooser"
+position = Vector2( 22, 149 )
+target = "level9"
 
 [node name="Sprite4" parent="." instance=ExtResource( 3 )]
 position = Vector2( -34, 223.5 )
@@ -39,3 +40,27 @@ scale = Vector2( 0.115234, 81 )
 [node name="Sprite5" parent="." instance=ExtResource( 3 )]
 position = Vector2( -34, 385.5 )
 scale = Vector2( 0.115234, 77 )
+
+[node name="vine" parent="." instance=ExtResource( 4 )]
+position = Vector2( 101, 218 )
+scale = Vector2( 3, 12 )
+
+[node name="vine2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 101, 458 )
+scale = Vector2( 3, 12 )
+
+[node name="vine3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 101, 338 )
+scale = Vector2( 3, 12 )
+
+[node name="vine4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 137, 265 )
+scale = Vector2( -3, 12 )
+
+[node name="vine5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 137, 505 )
+scale = Vector2( -3, 12 )
+
+[node name="vine6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 137, 385 )
+scale = Vector2( -3, 12 )

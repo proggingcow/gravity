@@ -12,8 +12,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-
-
+func _process(_delta):
+	for b in get_overlapping_bodies():
+		if b.has_method("apply_central_impulse"):
+			b.apply_central_impulse(Vector2(0,-5))
