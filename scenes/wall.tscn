@@ -15,6 +15,7 @@ scale = Vector2( 0.991211, 266 )
 texture = SubResource( 2 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_mask = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 2.5737e-05, -4.43674e-08 )

@@ -48,3 +48,8 @@ texture = SubResource( 2 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1181, 495 )
+target = "level_chooser"
+
+[node name="ExitArea2" parent="." instance=ExtResource( 4 )]
+position = Vector2( -130, 490 )
+target = "levelT1"
