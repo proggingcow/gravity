@@ -2,7 +2,7 @@ extends RigidBody2D
 
 func _input(event):
 	if event is InputEventKey :
-		if event.pressed and event.scancode == KEY_UP and ($Feet.get_overlapping_bodies().size() > 0) :
+		if event.pressed and event.scancode == KEY_W and ($Feet.get_overlapping_bodies().size() > 0) :
 			apply_central_impulse(Vector2(0,-200))
 		if event.pressed and event.scancode == KEY_R:
 			get_tree().reload_current_scene()
@@ -17,18 +17,18 @@ func _physics_process(delta):
 	
 
 func _process(_delta):
-	if Input.is_key_pressed(KEY_LEFT):
+	if Input.is_key_pressed(KEY_A):
 		apply_central_impulse(Vector2(-3,0))
 		if $Feet.get_overlapping_bodies().size()>0:
 			apply_central_impulse(Vector2(-7,3))
 			
-	if Input.is_key_pressed(KEY_DOWN):
+	if Input.is_key_pressed(KEY_S):
 		apply_central_impulse(Vector2(0,1))
 		if $water_zone.get_overlapping_areas().size() != 0:
 			apply_central_impulse(Vector2(0,3))
-	if Input.is_key_pressed(KEY_UP) and $water_zone.get_overlapping_areas().size() != 0:
+	if Input.is_key_pressed(KEY_W) and $water_zone.get_overlapping_areas().size() != 0:
 		apply_central_impulse(Vector2(0,-4))
-	if Input.is_key_pressed(KEY_RIGHT):
+	if Input.is_key_pressed(KEY_D):
 		apply_central_impulse(Vector2(3,0))
 		if $Feet.get_overlapping_bodies().size()>0:
 			apply_central_impulse(Vector2(7,3))

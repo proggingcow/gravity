@@ -18,25 +18,6 @@ gradient = SubResource( 1 )
 position = Vector2( 993, 285 )
 scale = Vector2( 6, 30 )
 
-[node name="TextEdit" type="RichTextLabel" parent="."]
-margin_left = 714.0
-margin_top = 64.0
-margin_right = 909.0
-margin_bottom = 434.0
-text = "
-      Arrow keys for 
-      moving your blob.
-	  Press r to restart level.
-	  Press escape to return to
-	  here.
-	  Press q to quit.
-	
-	"
-scroll_active = false
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [node name="ExitArea" parent="." instance=ExtResource( 3 )]
 position = Vector2( 72, 675 )
 target = "level1"
@@ -50,16 +31,16 @@ scale = Vector2( 0.0786133, 156 )
 texture = SubResource( 2 )
 
 [node name="Sprite" parent="." instance=ExtResource( 2 )]
-position = Vector2( 700, -194.5 )
-scale = Vector2( 0.390625, 445 )
+position = Vector2( 699.5, -194.5 )
+scale = Vector2( 0.391113, 445 )
 
 [node name="Sprite3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1052, 171.5 )
 scale = Vector2( 0.0595703, 73 )
 
 [node name="Sprite4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 0, 167 )
-scale = Vector2( 0.0253906, 950 )
+position = Vector2( 0, 537 )
+scale = Vector2( 0.0253906, 210 )
 
 [node name="ExitArea3" parent="." instance=ExtResource( 3 )]
 position = Vector2( 293, 684 )
@@ -195,5 +176,23 @@ position = Vector2( 1052, 476.5 )
 scale = Vector2( 0.0595703, 357 )
 
 [node name="ExitArea8" parent="." instance=ExtResource( 3 )]
-position = Vector2( 173, -20 )
+position = Vector2( 1091, 261 )
 target = "level_chooser2"
+
+[node name="Sprite13" parent="." instance=ExtResource( 2 )]
+position = Vector2( -7.50001, 7 )
+scale = Vector2( 0.0327148, 630 )
+
+[node name="ExitArea9" parent="." instance=ExtResource( 3 )]
+position = Vector2( -76, 370 )
+target = "level_chooserT"
+
+[node name="RichTextLabel8" type="RichTextLabel" parent="."]
+margin_left = 8.0
+margin_top = 351.0
+margin_right = 167.0
+margin_bottom = 391.0
+text = "team mode"
+__meta__ = {
+"_edit_use_anchors_": false
+}

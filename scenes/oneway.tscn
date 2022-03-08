@@ -1,0 +1,30 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://oneway.tres" type="Gradient" id=1]
+
+[sub_resource type="GradientTexture" id=5]
+gradient = ExtResource( 1 )
+
+[sub_resource type="GradientTexture" id=6]
+gradient = ExtResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 1024, 0.0108695 )
+
+[node name="Sprite" type="Sprite"]
+scale = Vector2( 0.0869141, 23 )
+texture = SubResource( 5 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 23.0112, -0.565217 )
+scale = Vector2( 0.140449, 1 )
+texture = SubResource( 6 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 2.5737e-05, -0.489131 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 3 )
+one_way_collision = true

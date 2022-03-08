@@ -11,27 +11,25 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="Area2D" parent="." instance=ExtResource( 7 )]
-position = Vector2( -325, -254 )
-scale = Vector2( 5, 6.3 )
+show_behind_parent = true
+position = Vector2( -324, -251 )
+scale = Vector2( 5.5, 6.3 )
+flow = Vector2( 0, -4.5 )
 
 [node name="vine" parent="." instance=ExtResource( 6 )]
-position = Vector2( -35, 410 )
-scale = Vector2( 3, 10 )
+position = Vector2( -15, 416 )
+scale = Vector2( 3, 12.447 )
 
 [node name="Sprite" parent="." instance=ExtResource( 4 )]
 position = Vector2( -1023.5, 845.5 )
 scale = Vector2( 0.600097, 621 )
-
-[node name="Sprite2" parent="." instance=ExtResource( 4 )]
-position = Vector2( -1965, -71.7499 )
-scale = Vector2( 1.36914, 1338.5 )
 
 [node name="Sprite3" parent="." instance=ExtResource( 4 )]
 position = Vector2( 549.5, -846 )
 scale = Vector2( 2.56396, 621 )
 
 [node name="blob" parent="." instance=ExtResource( 1 )]
-position = Vector2( -506, 520 )
+position = Vector2( -554, 525 )
 
 [node name="Camera2D" type="Camera2D" parent="blob"]
 current = true
@@ -93,20 +91,116 @@ position = Vector2( 695.288, 0 )
 scale = Vector2( 0.321153, 0.998469 )
 
 [node name="Spike2" parent="Sprite13" instance=ExtResource( 5 )]
-position = Vector2( 0, -0.0998468 )
+position = Vector2( 0, 0.0998535 )
 rotation = -3.14159
-scale = Vector2( 75.1645, 0.0332823 )
+scale = Vector2( 75.164, 0.055 )
 
 [node name="Sprite6" parent="." instance=ExtResource( 4 )]
 position = Vector2( 241.177, 127.556 )
-rotation = 0.00238933
 scale = Vector2( 0.401769, 5.92781 )
 
 [node name="Sprite14" parent="." instance=ExtResource( 4 )]
-position = Vector2( 720.75, 183.5 )
+position = Vector2( 849.184, 55.0656 )
 rotation = 0.785398
-scale = Vector2( 0.0139546, 194.056 )
+scale = Vector2( 0.0139546, 557.323 )
 
 [node name="Sprite15" parent="." instance=ExtResource( 4 )]
-position = Vector2( 790, 10 )
-scale = Vector2( 0.0117188, 232.125 )
+position = Vector2( 1038, -139.734 )
+scale = Vector2( 0.132324, 34.5312 )
+
+[node name="Spike2" parent="." instance=ExtResource( 5 )]
+show_behind_parent = false
+position = Vector2( -365, 65 )
+rotation = 1.5708
+scale = Vector2( 3, 20 )
+
+[node name="Spike3" parent="." instance=ExtResource( 5 )]
+show_behind_parent = false
+position = Vector2( -274, -38 )
+rotation = -1.5708
+scale = Vector2( 3, 20 )
+
+[node name="Spike4" parent="." instance=ExtResource( 5 )]
+show_behind_parent = false
+position = Vector2( -369, -116 )
+rotation = 1.5708
+scale = Vector2( 3, 20 )
+
+[node name="Spike5" parent="." instance=ExtResource( 5 )]
+show_behind_parent = false
+position = Vector2( -171, -414 )
+rotation = -1.5708
+scale = Vector2( 3, 10 )
+
+[node name="Spike6" parent="." instance=ExtResource( 5 )]
+show_behind_parent = false
+position = Vector2( -463, -449 )
+rotation = 1.5708
+scale = Vector2( 3, 10 )
+
+[node name="Spike7" parent="." instance=ExtResource( 5 )]
+show_behind_parent = false
+position = Vector2( -312, -212 )
+rotation = -1.5708
+scale = Vector2( 3, 24 )
+
+[node name="Sprite7" parent="." instance=ExtResource( 4 )]
+position = Vector2( -54, -203 )
+scale = Vector2( 0.0209958, 530.25 )
+
+[node name="Sprite8" parent="." instance=ExtResource( 4 )]
+position = Vector2( -1965, -66.75 )
+scale = Vector2( 1.36914, 1328.5 )
+
+[node name="Sprite16" parent="." instance=ExtResource( 4 )]
+position = Vector2( 132.5, 767.812 )
+scale = Vector2( 0.199707, 465.624 )
+
+[node name="Spike8" parent="." instance=ExtResource( 5 )]
+position = Vector2( -248, -527 )
+rotation = 3.14159
+scale = Vector2( 3, 5 )
+
+[node name="Spike9" parent="." instance=ExtResource( 5 )]
+position = Vector2( -221, -523 )
+rotation = 3.14159
+scale = Vector2( 3, 5 )
+
+[node name="Spike10" parent="." instance=ExtResource( 5 )]
+position = Vector2( -359, -497 )
+rotation = 3.14159
+scale = Vector2( 3, 5 )
+
+[node name="Spike11" parent="." instance=ExtResource( 5 )]
+position = Vector2( -336, -486 )
+rotation = 3.14159
+scale = Vector2( 3, 5 )
+
+[node name="Spike12" parent="." instance=ExtResource( 5 )]
+position = Vector2( -303, -494 )
+rotation = 3.14159
+scale = Vector2( 3, 5 )
+
+[node name="Spike13" parent="." instance=ExtResource( 5 )]
+position = Vector2( -270, -519 )
+rotation = 3.14159
+scale = Vector2( 3, 5 )
+
+[node name="Sprite17" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2.16898, -264.331 )
+rotation = 1.5708
+scale = Vector2( 0.199384, 154.588 )
+
+[node name="Sprite18" parent="." instance=ExtResource( 4 )]
+position = Vector2( 537, -126 )
+rotation = 1.5708
+scale = Vector2( 0.006, 951.614 )
+
+[node name="Area2D2" parent="." instance=ExtResource( 7 )]
+show_behind_parent = true
+position = Vector2( 1013, -380 )
+scale = Vector2( 19, 5 )
+flow = Vector2( 2, -3 )
+
+[editable path="Sprite15"]
+[editable path="Sprite18"]

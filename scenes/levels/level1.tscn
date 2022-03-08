@@ -7,6 +7,7 @@
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=5]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2( -1, 0 )
 
 [node name="Area2D5" parent="." instance=ExtResource( 1 )]
 position = Vector2( 826, 422 )
