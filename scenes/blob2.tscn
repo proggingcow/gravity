@@ -9,7 +9,7 @@ bounce = 0.2
 [node name="blob2" type="RigidBody2D"]
 position = Vector2( 1, 0 )
 collision_layer = 8388865
-collision_mask = 35
+collision_mask = 262179
 mode = 2
 physics_material_override = SubResource( 1 )
 gravity_scale = 2.6
