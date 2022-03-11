@@ -12,6 +12,8 @@ config_version=4
 
 config/name="Blob Jump"
 run/main_scene="res://scenes/levels/level_chooser.tscn"
+boot_splash/fullsize=false
+boot_splash/bg_color=Color( 0, 0.717647, 0.792157, 1 )
 config/icon="res://icon.png"
 
 [display]
