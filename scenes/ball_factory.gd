@@ -3,8 +3,6 @@ extends Node2D
 export var delay = 5
 export var interval = 5
 export var ball_velocity = Vector2(0,0)
-# Declare member variables here. E xamples:
-
 
 var ballclass = preload("res://scenes/deathball.tscn")
 

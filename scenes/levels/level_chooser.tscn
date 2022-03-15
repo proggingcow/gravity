@@ -23,7 +23,7 @@ position = Vector2( 72, 675 )
 target = "level1"
 
 [node name="blob" parent="." instance=ExtResource( 1 )]
-position = Vector2( 158, -22 )
+position = Vector2( 55, -19 )
 
 [node name="Sprite2" type="Sprite" parent="."]
 position = Vector2( 523.5, 243 )
@@ -31,8 +31,8 @@ scale = Vector2( 0.0786133, 156 )
 texture = SubResource( 2 )
 
 [node name="Sprite" parent="." instance=ExtResource( 2 )]
-position = Vector2( 699.5, -194.5 )
-scale = Vector2( 0.391113, 445 )
+position = Vector2( 592.5, -194.5 )
+scale = Vector2( 0.494629, 445 )
 
 [node name="Sprite3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1052, 171.5 )
@@ -180,8 +180,8 @@ position = Vector2( 1091, 261 )
 target = "level_chooser2"
 
 [node name="Sprite13" parent="." instance=ExtResource( 2 )]
-position = Vector2( -7.50001, 7 )
-scale = Vector2( 0.0327148, 630 )
+position = Vector2( -7.50001, 4.49998 )
+scale = Vector2( 0.0327148, 625 )
 
 [node name="ExitArea9" parent="." instance=ExtResource( 3 )]
 position = Vector2( -76, 370 )
@@ -196,3 +196,7 @@ text = "team mode"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Sprite14" parent="." instance=ExtResource( 2 )]
+position = Vector2( 21, 320 )
+scale = Vector2( 0.105469, 28 )

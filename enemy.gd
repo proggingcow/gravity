@@ -1,6 +1,6 @@
 extends RigidBody2D
 
-export var left = true
+export var moving = "l"
 export var move = Vector2()
 # Declare member variables here. Examples:
 # var a = 2
@@ -11,16 +11,14 @@ export var move = Vector2()
 func _ready():
 	pass # Replace with function body.
 
-
-# warning-ignore:unused_argument
-func _process(delta):
+func _process(_delta):
 	if $l.get_overlapping_bodies().size() > 0 :
-		left = false
+		moving = "r"
 	if $r.get_overlapping_bodies().size() > 0 :
-		left = true
-	if left == true:
+		moving = "l"
+	if moving == "l":
 		apply_central_impulse(move)
-	if left == false:
+	if moving == "r":
 		apply_central_impulse(Vector2(-move.x,move.y))
 	if $selfdeath.get_overlapping_bodies().size() > 0:
 		get_parent().remove_child(self)
