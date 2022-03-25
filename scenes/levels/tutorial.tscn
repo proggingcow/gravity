@@ -1,0 +1,83 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=3]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="blob" parent="." instance=ExtResource( 1 )]
+position = Vector2( 37, 572 )
+
+[node name="Sprite" parent="." instance=ExtResource( 2 )]
+position = Vector2( 519.25, 602 )
+scale = Vector2( 0.520264, 29 )
+
+[node name="Sprite2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 506, -7.00006 )
+scale = Vector2( 0.520264, 29 )
+
+[node name="Sprite3" parent="." instance=ExtResource( 2 )]
+position = Vector2( -519, 286.75 )
+scale = Vector2( 0.520264, 617.5 )
+
+[node name="Sprite4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1532.44, 415.078 )
+scale = Vector2( 0.52, 375.1 )
+
+[node name="Sprite5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 489, 570.25 )
+scale = Vector2( 0.156128, 79.5 )
+
+[node name="Sprite6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 970, 278 )
+rotation = -0.785398
+scale = Vector2( 0.055542, 29 )
+
+[node name="Sprite7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 626.375, 364.25 )
+scale = Vector2( 0.154663, 31.5001 )
+
+[node name="Sprite8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 943, 496 )
+scale = Vector2( 0.0668946, 29 )
+
+[node name="Sprite9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1531.88, 42.8125 )
+scale = Vector2( 0.52, 246.375 )
+
+[node name="Sprite10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 519.25, 602 )
+scale = Vector2( 0.520264, 29 )
+
+[node name="Sprite11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 519.25, 602 )
+scale = Vector2( 0.520264, 29 )
+
+[node name="Sprite12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 519.25, 602 )
+scale = Vector2( 0.520264, 29 )
+
+[node name="Sprite13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 519.25, 602 )
+scale = Vector2( 0.520264, 29 )
+
+[node name="Sprite14" parent="." instance=ExtResource( 2 )]
+position = Vector2( 660.375, 394 )
+scale = Vector2( 0.187866, 29 )
+
+[node name="Sprite15" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1490, 436 )
+scale = Vector2( 0.520264, 29 )
+
+[node name="ExitArea" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1112, 195 )
+target = "tutorial2"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 14.0
+margin_top = 10.0
+margin_right = 1002.0
+margin_bottom = 50.0
+text = "Arrow keys to move. Escape to go to main scene (not here). Get to the hole in the wall (the win for this tutorial level is there). R to restart. F to fullscreen."
+scroll_active = false

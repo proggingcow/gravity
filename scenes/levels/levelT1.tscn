@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://scenes/monkey.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/blob2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=4]

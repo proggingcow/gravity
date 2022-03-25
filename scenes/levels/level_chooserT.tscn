@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://scenes/monkey.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/blob2.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=4]
@@ -30,14 +30,15 @@ position = Vector2( -964, 423.5 )
 scale = Vector2( 0.991211, 63 )
 
 [node name="Sprite3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 546, -105 )
+position = Vector2( 546, -77.5 )
+scale = Vector2( 0.991211, 321 )
 
 [node name="Sprite4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 2000, 216 )
+position = Vector2( 2000, 252 )
 scale = Vector2( 0.991211, 77.9999 )
 
 [node name="Sprite5" parent="." instance=ExtResource( 2 )]
-position = Vector2( -964, 226.5 )
+position = Vector2( -958, 270 )
 scale = Vector2( 0.991211, 75 )
 texture = SubResource( 2 )
 
@@ -53,3 +54,7 @@ target = "level_chooser"
 [node name="ExitArea2" parent="." instance=ExtResource( 4 )]
 position = Vector2( -78, 496 )
 target = "levelT1"
+
+[node name="ExitArea3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1036, 458 )
+target = "levelT2"
