@@ -1,5 +1,8 @@
 extends RigidBody2D
 
+signal Dead;
+
+
 func _input(event):
 	if event is InputEventKey :
 		if event.pressed and event.scancode == KEY_UP and ($Feet.get_overlapping_bodies().size() > 0) :
@@ -30,7 +33,7 @@ func _process(_delta):
 			apply_central_impulse(Vector2(7,3))
 
 func _on_Suround_area_entered(_b):
-
+	emit_signal("Dead")
 	get_parent().remove_child(self)
 
 

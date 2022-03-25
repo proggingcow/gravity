@@ -1,9 +1,9 @@
 extends RichTextLabel
 
-func _ready():
-	pass 
 
-func _process(delta):
-	if !get_parent().has_node("blob"):
-		visible = true
 
+
+
+
+func _on_blob_Dead():
+	visible = true

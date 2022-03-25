@@ -193,3 +193,5 @@ margin_right = 724.0
 margin_bottom = 457.0
 text = "You died. You should press R to restart the level."
 script = ExtResource( 5 )
+
+[connection signal="Dead" from="blob" to="RichTextLabel" method="_on_blob_Dead"]
