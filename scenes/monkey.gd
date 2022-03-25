@@ -30,6 +30,7 @@ func _process(_delta):
 			apply_central_impulse(Vector2(7,3))
 
 func _on_Suround_area_entered(_b):
+
 	get_parent().remove_child(self)
 
 

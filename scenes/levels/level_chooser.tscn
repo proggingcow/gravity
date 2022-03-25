@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/vine.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/exitwithoutfullscreen.gd" type="Script" id=5]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0.537879 )
@@ -20,6 +21,7 @@ scale = Vector2( 6, 30 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 3 )]
 position = Vector2( 72, 675 )
+script = ExtResource( 5 )
 target = "level1"
 
 [node name="blob" parent="." instance=ExtResource( 1 )]
@@ -44,6 +46,7 @@ scale = Vector2( 0.0253906, 210 )
 
 [node name="ExitArea3" parent="." instance=ExtResource( 3 )]
 position = Vector2( 293, 684 )
+script = ExtResource( 5 )
 target = "level6"
 
 [node name="Sprite5" parent="." instance=ExtResource( 2 )]
@@ -86,14 +89,17 @@ __meta__ = {
 
 [node name="ExitArea2" parent="." instance=ExtResource( 3 )]
 position = Vector2( 943, 689 )
-target = "level3"
+script = ExtResource( 5 )
+target = "level5"
 
 [node name="ExitArea5" parent="." instance=ExtResource( 3 )]
 position = Vector2( 518, 673 )
+script = ExtResource( 5 )
 target = "level5"
 
 [node name="ExitArea4" parent="." instance=ExtResource( 3 )]
 position = Vector2( 728, 688 )
+script = ExtResource( 5 )
 target = "level4"
 
 [node name="Sprite7" parent="." instance=ExtResource( 2 )]
@@ -154,6 +160,7 @@ __meta__ = {
 [node name="ExitArea7" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1103, 89 )
 scale = Vector2( 1, 2 )
+script = ExtResource( 5 )
 target = "level7"
 
 [node name="RichTextLabel7" type="RichTextLabel" parent="."]
@@ -174,7 +181,7 @@ scale = Vector2( 0.0595703, 166 )
 
 [node name="ExitArea8" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1104, 253 )
-target = "level_chooser2"
+script = ExtResource( 5 )
 
 [node name="Sprite13" parent="." instance=ExtResource( 2 )]
 position = Vector2( -7.50001, 4.49998 )
@@ -182,6 +189,8 @@ scale = Vector2( 0.0327148, 625 )
 
 [node name="ExitArea9" parent="." instance=ExtResource( 3 )]
 position = Vector2( -76, 370 )
+script = ExtResource( 5 )
+target = "level_chooserT"
 
 [node name="RichTextLabel8" type="RichTextLabel" parent="."]
 margin_left = 8.0
@@ -211,4 +220,5 @@ text = "tuturial
 
 [node name="ExitArea10" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1105, 459 )
+script = ExtResource( 5 )
 target = "tutorial"

@@ -18,10 +18,14 @@ func _ready():
 func _input(event):
 	if event is InputEventKey:
 		if event.pressed and event.scancode == KEY_ESCAPE:
+# warning-ignore:return_value_discarded
 			get_tree().change_scene("res://scenes/levels/level_chooser.tscn")
 		if event.pressed and event.scancode == KEY_R:
+# warning-ignore:return_value_discarded
 			get_tree().reload_current_scene()
 
+# warning-ignore:unused_argument
 func _on_ExitArea_body_entered(body):
+# warning-ignore:return_value_discarded
 	get_tree().change_scene("res://scenes/levels/" + target + ".tscn")
 
