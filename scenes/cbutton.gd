@@ -2,12 +2,12 @@ extends Area2D
 
 var p = false
 var mykid
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
 	for ch in get_children():
 		if ch.name == "Ob":
+			mykid = ch
 			remove_child(ch)
-		mykid = ch
 
 # warning-ignore:unused_argument
 func _process(delta):

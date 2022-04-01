@@ -6,6 +6,7 @@
 extents = Vector2( 5.5, 5 )
 
 [node name="vine" type="StaticBody2D"]
+show_behind_parent = true
 collision_layer = 0
 collision_mask = 2
 

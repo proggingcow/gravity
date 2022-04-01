@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/levels/tutorialdeath.gd" type="Script" id=5]
 
 [node name="Node2D" type="Node2D"]
 
@@ -58,7 +57,7 @@ scale = Vector2( 0.991211, 640 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1112, 58 )
-target = "level_chooser"
+target = "tutorial3"
 
 [node name="Sprite12" parent="." instance=ExtResource( 2 )]
 position = Vector2( 275.25, 560 )
@@ -186,12 +185,9 @@ position = Vector2( 921, 561 )
 scale = Vector2( 2, 2 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-visible = false
-margin_left = 407.0
-margin_top = 436.0
-margin_right = 724.0
-margin_bottom = 457.0
-text = "You died. You should press R to restart the level."
-script = ExtResource( 5 )
-
-[connection signal="Dead" from="blob" to="RichTextLabel" method="_on_blob_Dead"]
+show_behind_parent = true
+margin_left = 505.0
+margin_top = 521.0
+margin_right = 649.0
+margin_bottom = 537.0
+text = "Dont touch the spikes"

@@ -1,0 +1,141 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/box.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=5]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="blob" parent="." instance=ExtResource( 1 )]
+position = Vector2( 981, 568 )
+
+[node name="Sprite" parent="." instance=ExtResource( 2 )]
+position = Vector2( 601.625, 556 )
+scale = Vector2( 0.149048, 24.0001 )
+
+[node name="Sprite2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 983.5, 591 )
+scale = Vector2( 0.065918, 19.9999 )
+
+[node name="Sprite3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 605, 361 )
+scale = Vector2( 0.0943603, 24.0001 )
+
+[node name="Sprite4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 343, 306 )
+scale = Vector2( 0.0943603, 24.0001 )
+
+[node name="Sprite5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 836, 411 )
+scale = Vector2( 0.0943603, 24.0001 )
+
+[node name="RigidBody2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 642, 531 )
+
+[node name="Sprite7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 621.188, 489.5 )
+scale = Vector2( 0.0584106, 55 )
+
+[node name="Sprite8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 645.688, 465 )
+scale = Vector2( 0.0823364, 5.99999 )
+
+[node name="Sprite9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 641.688, 467.5 )
+scale = Vector2( 0.0784302, 11 )
+
+[node name="Sprite10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 638.188, 473 )
+scale = Vector2( 0.0750122, 22 )
+
+[node name="Sprite11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 632.688, 477.5 )
+scale = Vector2( 0.0696411, 31 )
+
+[node name="Sprite12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 626.688, 483.5 )
+scale = Vector2( 0.0637817, 43 )
+
+[node name="Sprite13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 702.302, 489.698 )
+rotation = -0.785398
+scale = Vector2( 0.0338442, 9 )
+
+[node name="Sprite6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 343, 306 )
+scale = Vector2( 0.0943603, 24.0001 )
+
+[node name="Sprite14" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1025.5, 146 )
+scale = Vector2( 0.0893555, 48.5 )
+
+[node name="Sprite15" parent="." instance=ExtResource( 2 )]
+position = Vector2( 479.188, 145 )
+scale = Vector2( 0.222473, 24.0001 )
+
+[node name="Sprite16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 134, 235 )
+scale = Vector2( 0.0943603, 24.0001 )
+
+[node name="Sprite17" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1025.5, 5.00002 )
+scale = Vector2( 0.0893555, 48.5 )
+
+[node name="Sprite18" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1092, 75.625 )
+scale = Vector2( 0.0244142, 189.25 )
+
+[node name="ExitArea" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1108, 77 )
+scale = Vector2( 0.977251, 1.61701 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+show_behind_parent = true
+margin_left = 452.0
+margin_top = 569.0
+margin_right = 734.0
+margin_bottom = 598.0
+text = "Boxes are rough and phisical. Try putting this one on its side!"
+scroll_active = false
+
+[node name="Spike8" parent="." instance=ExtResource( 5 )]
+position = Vector2( 723, 494 )
+scale = Vector2( 2, 2 )
+
+[node name="Spike9" parent="." instance=ExtResource( 5 )]
+position = Vector2( 583, 120 )
+scale = Vector2( 2, 2 )
+
+[node name="Spike10" parent="." instance=ExtResource( 5 )]
+position = Vector2( 454, 115 )
+scale = Vector2( 2, 2 )
+
+[node name="Spike11" parent="." instance=ExtResource( 5 )]
+position = Vector2( 342, 117 )
+scale = Vector2( 2, 2 )
+
+[node name="Spike12" parent="." instance=ExtResource( 5 )]
+position = Vector2( 249, 234 )
+rotation = 1.5708
+scale = Vector2( 2, 2 )
+
+[node name="Spike13" parent="." instance=ExtResource( 5 )]
+position = Vector2( 854, 146 )
+rotation = -1.5708
+scale = Vector2( 4.9, 8 )
+
+[node name="Spike14" parent="." instance=ExtResource( 5 )]
+position = Vector2( 722, 361 )
+rotation = 1.5708
+scale = Vector2( 2, 2 )
+
+[node name="Spike15" parent="." instance=ExtResource( 5 )]
+position = Vector2( 526, 392 )
+rotation = 3.14159
+scale = Vector2( 2, 2 )
+
+[node name="Spike16" parent="." instance=ExtResource( 5 )]
+position = Vector2( 718, 442 )
+scale = Vector2( 2, 2 )

@@ -1,8 +1,5 @@
 extends RigidBody2D
 
-signal Dead;
-
-
 func _input(event):
 	if event is InputEventKey :
 		if event.pressed and event.scancode == KEY_UP and ($Feet.get_overlapping_bodies().size() > 0) :
@@ -18,9 +15,12 @@ func _physics_process(delta):
 func _process(_delta):
 	if Input.is_key_pressed(KEY_LEFT):
 		apply_central_impulse(Vector2(-3,0))
+		if $Sprite3.scale.x == -1:
+			$Sprite3.scale.x = 1
 		if $Feet.get_overlapping_bodies().size()>0:
 			apply_central_impulse(Vector2(-7,3))
-			
+	if position.y >700:
+		get_tree().reload_current_scene()
 	if Input.is_key_pressed(KEY_DOWN):
 		apply_central_impulse(Vector2(0,1))
 		if $water_zone.get_overlapping_areas().size() != 0:
@@ -29,13 +29,13 @@ func _process(_delta):
 		apply_central_impulse(Vector2(0,-4))
 	if Input.is_key_pressed(KEY_RIGHT):
 		apply_central_impulse(Vector2(3,0))
+		if $Sprite3.scale.x == 1:
+			$Sprite3.scale.x = -1
 		if $Feet.get_overlapping_bodies().size()>0:
 			apply_central_impulse(Vector2(7,3))
 
 func _on_Suround_area_entered(_b):
-	emit_signal("Dead")
-	get_parent().remove_child(self)
-
+	get_tree().reload_current_scene()
 
 
 func _on_Area2D5_area_entered(area):
