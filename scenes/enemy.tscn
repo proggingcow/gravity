@@ -8,7 +8,6 @@ friction = 0.5
 
 [node name="enemy" type="RigidBody2D"]
 collision_layer = 129
-mode = 2
 physics_material_override = SubResource( 1 )
 script = ExtResource( 1 )
 
@@ -21,8 +20,8 @@ scale = Vector2( 1.375, 1.375 )
 texture = ExtResource( 2 )
 
 [node name="l" type="Area2D" parent="."]
-collision_layer = 129
-collision_mask = 0
+collision_layer = 131
+collision_mask = 131
 
 [node name="l" type="CollisionPolygon2D" parent="l"]
 polygon = PoolVector2Array( -18, -3, -23, 1, -27, 8, -27, 10, -24, 12, -12, -8 )

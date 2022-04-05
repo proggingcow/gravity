@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/enemy.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/ceartainonly.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/fake_wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=4]
 
 [node name="Node2D" type="Node2D"]
 
@@ -15,42 +14,39 @@ position = Vector2( 96, 526 )
 position = Vector2( -84.5, 138 )
 scale = Vector2( 0.146973, 846 )
 
-[node name="enemy" parent="." instance=ExtResource( 3 )]
-position = Vector2( 936, 461 )
-move = Vector2( -3, 0 )
-
-[node name="enemy2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 250, 369 )
-move = Vector2( -3, 0 )
-
-[node name="enemy3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 554, 348 )
-move = Vector2( -3, 0 )
-
 [node name="Sprite2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 918.5, 691 )
-scale = Vector2( 0.262207, 266 )
+position = Vector2( 1075.5, 691 )
+scale = Vector2( 0.108887, 266 )
 
 [node name="Sprite3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 193.5, 691 )
-scale = Vector2( 0.317871, 266 )
+position = Vector2( -6.49995, 691 )
+scale = Vector2( 0.122559, 266 )
 
 [node name="Sprite4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 553, 402.5 )
-scale = Vector2( 0.0751953, 23 )
+position = Vector2( 470, 662.25 )
+scale = Vector2( 0.0380859, 243.5 )
 
 [node name="Sprite5" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1269, 268 )
 scale = Vector2( 0.262207, 600 )
 
-[node name="ceartainonly" parent="." instance=ExtResource( 4 )]
-position = Vector2( 584.5, 606 )
-scale = Vector2( 0.0639649, 96.5 )
+[node name="Sprite6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 508.5, 547.25 )
+scale = Vector2( 0.0756836, 13.5 )
 
-[node name="Spike" parent="." instance=ExtResource( 5 )]
-position = Vector2( 584, 811 )
-scale = Vector2( 20, 1 )
+[node name="Sprite7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 570, 691 )
+scale = Vector2( 0.0146484, 186 )
 
-[node name="ceartainonly2" parent="." instance=ExtResource( 4 )]
-position = Vector2( 97.25, 528.375 )
-scale = Vector2( 0.0305176, 59.25 )
+[node name="Sprite8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 704.25, 6 )
+scale = Vector2( 0.813721, 76 )
+
+[node name="Sprite9" parent="." instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 538.512, 609.023 )
+scale = Vector2( 0.0463746, 112.046 )
+
+[node name="ExitArea" parent="." instance=ExtResource( 4 )]
+position = Vector2( 538, 659 )
+target = "level_chooser2"
