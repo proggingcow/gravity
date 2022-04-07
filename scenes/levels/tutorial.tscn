@@ -75,9 +75,10 @@ position = Vector2( 1112, 195 )
 target = "tutorial2"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 14.0
+margin_left = 21.0
 margin_top = 10.0
-margin_right = 1002.0
-margin_bottom = 50.0
-text = "Arrow keys to move. Escape to go to main scene (not here). Get to the hole in the wall (the win for this tutorial level is there). R to restart. F to fullscreen."
+margin_right = 512.0
+margin_bottom = 104.0
+rect_scale = Vector2( 2, 2 )
+text = "Arrow keys to move. Escape to go to main scene (not here). Get to the hole in the wall (the win for this tutorial level is there). R to restart. F to fullscreen. Q to quit"
 scroll_active = false

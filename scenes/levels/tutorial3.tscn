@@ -40,28 +40,28 @@ scale = Vector2( 0.0584106, 55 )
 
 [node name="Sprite8" parent="." instance=ExtResource( 2 )]
 position = Vector2( 645.688, 465 )
-scale = Vector2( 0.0823364, 5.99999 )
+scale = Vector2( 0.0823362, 5.99999 )
 
 [node name="Sprite9" parent="." instance=ExtResource( 2 )]
 position = Vector2( 641.688, 467.5 )
 scale = Vector2( 0.0784302, 11 )
 
 [node name="Sprite10" parent="." instance=ExtResource( 2 )]
-position = Vector2( 638.188, 473 )
-scale = Vector2( 0.0750122, 22 )
+position = Vector2( 637.688, 473 )
+scale = Vector2( 0.0745237, 22 )
 
 [node name="Sprite11" parent="." instance=ExtResource( 2 )]
-position = Vector2( 632.688, 477.5 )
-scale = Vector2( 0.0696411, 31 )
+position = Vector2( 631.688, 478 )
+scale = Vector2( 0.0686643, 32 )
 
 [node name="Sprite12" parent="." instance=ExtResource( 2 )]
 position = Vector2( 626.688, 483.5 )
 scale = Vector2( 0.0637817, 43 )
 
 [node name="Sprite13" parent="." instance=ExtResource( 2 )]
-position = Vector2( 702.302, 489.698 )
+position = Vector2( 702.302, 489.61 )
 rotation = -0.785398
-scale = Vector2( 0.0338442, 9 )
+scale = Vector2( 0.0339051, 8.59433 )
 
 [node name="Sprite6" parent="." instance=ExtResource( 2 )]
 position = Vector2( 343, 306 )
@@ -141,3 +141,8 @@ scale = Vector2( 2, 2 )
 [node name="Spike16" parent="." instance=ExtResource( 5 )]
 position = Vector2( 718, 442 )
 scale = Vector2( 2, 2 )
+
+[node name="Sprite19" parent="." instance=ExtResource( 2 )]
+position = Vector2( 246.4, 185.8 )
+rotation = -0.785398
+scale = Vector2( 0.0237565, 24.3622 )
