@@ -30,9 +30,9 @@ position = Vector2( 489, 570.25 )
 scale = Vector2( 0.156128, 79.5 )
 
 [node name="Sprite6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 970, 278 )
+position = Vector2( 1003.74, 311.743 )
 rotation = -0.785398
-scale = Vector2( 0.055542, 29 )
+scale = Vector2( 0.055542, 124.441 )
 
 [node name="Sprite7" parent="." instance=ExtResource( 2 )]
 position = Vector2( 626.375, 364.25 )

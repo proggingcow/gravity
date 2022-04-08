@@ -12,8 +12,9 @@ config_version=4
 
 config/name="Blob Jump"
 run/main_scene="res://scenes/levels/tutorial.tscn"
+boot_splash/image="res://iconl.png"
 boot_splash/fullsize=false
-boot_splash/bg_color=Color( 0, 0.717647, 0.792157, 1 )
+boot_splash/bg_color=Color( 0.458824, 0.0823529, 0.0823529, 1 )
 config/icon="res://icon.png"
 
 [display]
