@@ -71,7 +71,7 @@ position = Vector2( 1490, 436 )
 scale = Vector2( 0.520264, 29 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1112, 195 )
+position = Vector2( 1098, 198 )
 target = "tutorial2"
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]

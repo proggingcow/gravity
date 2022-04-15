@@ -48,6 +48,7 @@ scale = Vector2( 0.991211, 984 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1101, 93 )
+target = "level_chooserT"
 
 [node name="Spike" parent="." instance=ExtResource( 4 )]
 position = Vector2( 660, 530 )
@@ -99,7 +100,7 @@ position = Vector2( 880, 450 )
 rotation = -1.5708
 
 [node name="Spike12" parent="." instance=ExtResource( 4 )]
-position = Vector2( 571, 253 )
+position = Vector2( 598, 246 )
 scale = Vector2( 6, 1 )
 
 [node name="Area2D" parent="." instance=ExtResource( 6 )]
@@ -152,3 +153,12 @@ scale = Vector2( 0.999999, 0.999999 )
 [node name="Ob" parent="Ob2" instance=ExtResource( 10 )]
 position = Vector2( -550, 2 )
 scale = Vector2( 2.76, 17.32 )
+
+[node name="vine" parent="." instance=ExtResource( 10 )]
+position = Vector2( 740, 234 )
+scale = Vector2( 5, 30 )
+
+[node name="vine2" parent="." instance=ExtResource( 10 )]
+position = Vector2( 887, 85 )
+rotation = 1.5708
+scale = Vector2( 5, 30 )

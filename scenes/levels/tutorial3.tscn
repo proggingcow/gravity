@@ -143,6 +143,6 @@ position = Vector2( 718, 442 )
 scale = Vector2( 2, 2 )
 
 [node name="Sprite19" parent="." instance=ExtResource( 2 )]
-position = Vector2( 246.4, 185.8 )
+position = Vector2( 252.076, 180.124 )
 rotation = -0.785398
-scale = Vector2( 0.0237565, 24.3622 )
+scale = Vector2( 0.0159175, 24.3622 )
