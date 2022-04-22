@@ -68,7 +68,7 @@ scale = Vector2( 0.0246579, 232.125 )
 [node name="ExitArea" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2040, 595 )
 scale = Vector2( 1.2, 0.02 )
-target = "level_chooser2"
+target = "level_chooser"
 
 [node name="Sprite12" parent="." instance=ExtResource( 3 )]
 position = Vector2( 170, 288 )
@@ -112,19 +112,19 @@ scale = Vector2( 0.132324, 34.5312 )
 show_behind_parent = false
 position = Vector2( -365, 65 )
 rotation = 1.5708
-scale = Vector2( 3, 20 )
+scale = Vector2( 1.5, 20 )
 
 [node name="Spike3" parent="." instance=ExtResource( 5 )]
 show_behind_parent = false
 position = Vector2( -274, -38 )
 rotation = -1.5708
-scale = Vector2( 3, 20 )
+scale = Vector2( 1.5, 20 )
 
 [node name="Spike4" parent="." instance=ExtResource( 5 )]
 show_behind_parent = false
 position = Vector2( -369, -116 )
 rotation = 1.5708
-scale = Vector2( 3, 20 )
+scale = Vector2( 1.5, 20 )
 
 [node name="Spike5" parent="." instance=ExtResource( 5 )]
 show_behind_parent = false
@@ -142,7 +142,7 @@ scale = Vector2( 3, 10 )
 show_behind_parent = false
 position = Vector2( -312, -212 )
 rotation = -1.5708
-scale = Vector2( 3, 24 )
+scale = Vector2( 1.5, 24 )
 
 [node name="Sprite7" parent="." instance=ExtResource( 4 )]
 position = Vector2( -54, -203 )
@@ -198,7 +198,7 @@ scale = Vector2( 0.006, 951.614 )
 
 [node name="Area2D2" parent="." instance=ExtResource( 7 )]
 show_behind_parent = true
-position = Vector2( 1013, -380 )
+position = Vector2( 1020, -367 )
 scale = Vector2( 19, 5 )
 flow = Vector2( 2, -3 )
 

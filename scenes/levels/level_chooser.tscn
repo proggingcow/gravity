@@ -1,187 +1,58 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/vine.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/exitwithoutfullscreen.gd" type="Script" id=5]
-
-[sub_resource type="Gradient" id=1]
-offsets = PoolRealArray( 0.537879 )
-colors = PoolColorArray( 0.463867, 0, 0.434762, 1 )
-
-[sub_resource type="GradientTexture" id=2]
-gradient = SubResource( 1 )
 
 [node name="Node2D" type="Node2D"]
 
-[node name="vine" parent="." instance=ExtResource( 4 )]
-position = Vector2( 993, 285 )
-scale = Vector2( 6, 30 )
-
 [node name="ExitArea" parent="." instance=ExtResource( 3 )]
-position = Vector2( 72, 675 )
+position = Vector2( 189, 684 )
 script = ExtResource( 5 )
 target = "level1"
 
 [node name="blob" parent="." instance=ExtResource( 1 )]
 position = Vector2( 55, -19 )
 
-[node name="Sprite2" type="Sprite" parent="."]
-position = Vector2( 523.5, 243 )
-scale = Vector2( 0.0786133, 156 )
-texture = SubResource( 2 )
-
 [node name="Sprite" parent="." instance=ExtResource( 2 )]
 position = Vector2( 592.5, -194.5 )
 scale = Vector2( 0.494629, 445 )
 
-[node name="Sprite3" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1052, 171.5 )
-scale = Vector2( 0.0595703, 73 )
-
-[node name="Sprite4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 0, 537 )
-scale = Vector2( 0.0253906, 210 )
-
-[node name="ExitArea3" parent="." instance=ExtResource( 3 )]
-position = Vector2( 293, 684 )
-script = ExtResource( 5 )
-target = "level6"
-
-[node name="Sprite5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 187, 560 )
-scale = Vector2( 0.0673828, 172 )
-
 [node name="Sprite6" parent="." instance=ExtResource( 2 )]
-position = Vector2( 406, 560 )
-scale = Vector2( 0.0673828, 178 )
+position = Vector2( 350.5, 560 )
+scale = Vector2( 0.121582, 178 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 43.0
-margin_top = 513.0
-margin_right = 93.0
-margin_bottom = 534.0
-text = "Level 1"
-__meta__ = {
-"_edit_use_anchors_": false
-}
+show_behind_parent = true
+margin_left = 168.0
+margin_top = 511.0
+margin_right = 218.0
+margin_bottom = 532.0
+text = "world 1"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
-margin_left = 494.0
-margin_top = 512.0
-margin_right = 544.0
-margin_bottom = 532.0
-text = "Level 3"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="RichTextLabel3" type="RichTextLabel" parent="."]
-margin_left = 272.0
-margin_top = 515.0
-margin_right = 322.0
-margin_bottom = 532.0
-text = "Level 2"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ExitArea2" parent="." instance=ExtResource( 3 )]
-position = Vector2( 943, 689 )
-script = ExtResource( 5 )
-target = "level5"
+show_behind_parent = true
+margin_left = 476.0
+margin_top = 511.0
+margin_right = 561.0
+margin_bottom = 586.0
+text = "world 2
+playable,
+under construction"
 
 [node name="ExitArea5" parent="." instance=ExtResource( 3 )]
 position = Vector2( 518, 673 )
 script = ExtResource( 5 )
-target = "level5"
-
-[node name="ExitArea4" parent="." instance=ExtResource( 3 )]
-position = Vector2( 728, 688 )
-script = ExtResource( 5 )
-target = "level4"
-
-[node name="Sprite7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 622, 562 )
-scale = Vector2( 0.0673828, 178 )
-
-[node name="RichTextLabel4" type="RichTextLabel" parent="."]
-margin_left = 715.0
-margin_top = 509.0
-margin_right = 775.0
-margin_bottom = 539.0
-text = "Level 4
-"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Sprite8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 836, 566 )
-scale = Vector2( 0.0673828, 178 )
-
-[node name="RichTextLabel5" type="RichTextLabel" parent="."]
-margin_left = 920.0
-margin_top = 505.0
-margin_right = 980.0
-margin_bottom = 535.0
-text = "Level 5
-"
-
-[node name="Sprite9" parent="." instance=ExtResource( 2 )]
-position = Vector2( 525, 357 )
-scale = Vector2( 0.105469, 72 )
+target = "level8"
 
 [node name="ExitArea6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 518, 274 )
+position = Vector2( 832, 720 )
 scale = Vector2( 1, 2 )
 
 [node name="Sprite10" parent="." instance=ExtResource( 2 )]
-position = Vector2( 21.0001, 427 )
-scale = Vector2( 0.105469, 28 )
-
-[node name="Sprite11" parent="." instance=ExtResource( 2 )]
-position = Vector2( 432, 379 )
-scale = Vector2( 0.188477, 28 )
-
-[node name="RichTextLabel6" type="RichTextLabel" parent="."]
-margin_left = 449.0
-margin_top = 177.0
-margin_right = 602.0
-margin_bottom = 207.0
-text = "Final Level for this area
-"
-scroll_active = false
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="ExitArea7" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1103, 89 )
-scale = Vector2( 1, 2 )
-script = ExtResource( 5 )
-target = "level7"
-
-[node name="RichTextLabel7" type="RichTextLabel" parent="."]
-margin_left = 961.0
-margin_top = 78.0
-margin_right = 1031.0
-margin_bottom = 126.0
-text = "Level 6
-
-"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Sprite12" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1052, 572 )
-scale = Vector2( 0.0595703, 166 )
-
-[node name="ExitArea8" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1104, 253 )
-script = ExtResource( 5 )
+position = Vector2( 21.0001, 536.5 )
+scale = Vector2( 0.105469, 247 )
 
 [node name="Sprite13" parent="." instance=ExtResource( 2 )]
 position = Vector2( -7.50001, 4.49998 )
@@ -190,27 +61,26 @@ scale = Vector2( 0.0327148, 625 )
 [node name="ExitArea9" parent="." instance=ExtResource( 3 )]
 position = Vector2( -76, 370 )
 script = ExtResource( 5 )
-target = "level_chooserT"
+target = "levelT1"
 
 [node name="RichTextLabel8" type="RichTextLabel" parent="."]
+show_behind_parent = true
 margin_left = 8.0
 margin_top = 351.0
 margin_right = 167.0
 margin_bottom = 391.0
 text = "team mode"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Sprite14" parent="." instance=ExtResource( 2 )]
 position = Vector2( 21, 320 )
 scale = Vector2( 0.105469, 28 )
 
 [node name="Sprite15" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1052, 363 )
-scale = Vector2( 0.0595703, 130 )
+position = Vector2( 1052, 191.5 )
+scale = Vector2( 0.0595703, 473 )
 
 [node name="RichTextLabel9" type="RichTextLabel" parent="."]
+show_behind_parent = true
 margin_left = 961.0
 margin_top = 448.0
 margin_right = 1021.0
@@ -222,3 +92,28 @@ text = "tuturial
 position = Vector2( 1105, 459 )
 script = ExtResource( 5 )
 target = "tutorial"
+
+[node name="Sprite16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 87, 560 )
+scale = Vector2( 0.0693359, 178 )
+
+[node name="Sprite7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 987.5, 560 )
+scale = Vector2( 0.105957, 178 )
+
+[node name="Sprite8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 674.5, 560 )
+scale = Vector2( 0.108887, 178 )
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+show_behind_parent = true
+margin_left = 790.0
+margin_top = 508.0
+margin_right = 875.0
+margin_bottom = 589.0
+text = "world 3
+soon under construction"
+
+[node name="Sprite9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 929, 483.5 )
+scale = Vector2( 0.163086, 25 )

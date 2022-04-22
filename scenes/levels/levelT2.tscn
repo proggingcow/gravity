@@ -48,7 +48,11 @@ scale = Vector2( 0.991211, 984 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1101, 93 )
-target = "level_chooserT"
+target = "level_chooser"
+
+[node name="ExitArea2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1101, 93 )
+target = "level_chooser"
 
 [node name="Spike" parent="." instance=ExtResource( 4 )]
 position = Vector2( 660, 530 )

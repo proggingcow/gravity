@@ -35,7 +35,7 @@ position = Vector2( 650, 371 )
 [node name="ExitArea" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1085, 505 )
 scale = Vector2( 0.527344, 266 )
-target = "level_chooser"
+target = "level7"
 
 [node name="vine10" parent="." instance=ExtResource( 5 )]
 position = Vector2( 645, 259 )

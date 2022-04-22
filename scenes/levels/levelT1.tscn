@@ -23,7 +23,7 @@ position = Vector2( 661, 567 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1130, 45 )
-target = "level_chooserT"
+target = "levelT2"
 
 [node name="Sprite" parent="." instance=ExtResource( 4 )]
 position = Vector2( 2803, -215 )

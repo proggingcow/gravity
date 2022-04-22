@@ -41,7 +41,7 @@ scale = Vector2( 0.0273438, -634 )
 [node name="ExitArea" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1107, 504 )
 scale = Vector2( 1, 1.5 )
-target = "level_chooser"
+target = "level3"
 
 [node name="Sprite7" parent="." instance=ExtResource( 2 )]
 position = Vector2( 138, 407 )

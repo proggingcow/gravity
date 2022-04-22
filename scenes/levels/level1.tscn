@@ -90,4 +90,4 @@ scale = Vector2( 0.0476277, 22.1308 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1092, 450 )
-target = "level_chooser"
+target = "level6"

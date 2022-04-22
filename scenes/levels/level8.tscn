@@ -11,7 +11,7 @@
 [node name="ExitArea" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1110, 429 )
 rotation = 1.5708
-target = "level_chooser2"
+target = "level9"
 
 [node name="blob" parent="." instance=ExtResource( 1 )]
 position = Vector2( 97, 532 )
