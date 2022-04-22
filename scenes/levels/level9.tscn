@@ -29,7 +29,7 @@ position = Vector2( 549.5, -846 )
 scale = Vector2( 2.56396, 621 )
 
 [node name="blob" parent="." instance=ExtResource( 1 )]
-position = Vector2( -554, 525 )
+position = Vector2( -500, 508 )
 
 [node name="Camera2D" type="Camera2D" parent="blob"]
 current = true
@@ -68,7 +68,7 @@ scale = Vector2( 0.0246579, 232.125 )
 [node name="ExitArea" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2040, 595 )
 scale = Vector2( 1.2, 0.02 )
-target = "level_chooser"
+target = "level10"
 
 [node name="Sprite12" parent="." instance=ExtResource( 3 )]
 position = Vector2( 170, 288 )

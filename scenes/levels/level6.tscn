@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/deathball.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/exitwithoutfullscreen.gd" type="Script" id=6]
 
 [node name="Node2D" type="Node2D"]
 
@@ -74,12 +75,12 @@ position = Vector2( 489, 241 )
 mode = 1
 
 [node name="Sprite11" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1163, 185 )
-scale = Vector2( 0.048, 94.5 )
+position = Vector2( 1163, 188.125 )
+scale = Vector2( 0.048, 88.25 )
 
 [node name="Sprite12" parent="." instance=ExtResource( 3 )]
-position = Vector2( 1049, 145 )
-scale = Vector2( 0.0825195, 14.5 )
+position = Vector2( 1049, 148.625 )
+scale = Vector2( 0.0825195, 7.25 )
 
 [node name="Sprite13" parent="." instance=ExtResource( 3 )]
 position = Vector2( 961.75, 225 )
@@ -88,3 +89,8 @@ scale = Vector2( 0.155518, 14.5 )
 [node name="ExitArea" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1107, 191 )
 target = "level5"
+
+[node name="ExitArea2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1110, 107 )
+script = ExtResource( 6 )
+target = "slevel1"

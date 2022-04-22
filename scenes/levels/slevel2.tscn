@@ -1,0 +1,138 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=5]
+
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0.321429 )
+colors = PoolColorArray( 1, 0, 0.884766, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 3 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="blob" parent="." instance=ExtResource( 1 )]
+position = Vector2( 55, 554 )
+
+[node name="Sprite" parent="." instance=ExtResource( 2 )]
+position = Vector2( 521, 718 )
+texture = SubResource( 2 )
+
+[node name="Sprite3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 239.5, 439 )
+scale = Vector2( 0.0454102, 20 )
+texture = SubResource( 2 )
+
+[node name="Sprite4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 542.75, 375.5 )
+scale = Vector2( 0.161377, 47 )
+texture = SubResource( 2 )
+
+[node name="Sprite5" parent="." instance=ExtResource( 2 )]
+position = Vector2( -1007, 274 )
+scale = Vector2( 0.991211, 682 )
+texture = SubResource( 2 )
+
+[node name="Sprite6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 505, -106 )
+texture = SubResource( 2 )
+
+[node name="Sprite7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1936, 385 )
+scale = Vector2( 0.991211, 466 )
+texture = SubResource( 2 )
+
+[node name="Area2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 893, 579.5 )
+
+[node name="Sprite2" parent="Area2D" instance=ExtResource( 2 )]
+position = Vector2( 129, -498.5 )
+scale = Vector2( 0.0166016, 266 )
+texture = SubResource( 2 )
+
+[node name="Sprite12" parent="Area2D" instance=ExtResource( 2 )]
+position = Vector2( -341, -103.5 )
+scale = Vector2( 0.40332, 12.0001 )
+texture = SubResource( 2 )
+
+[node name="Sprite11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 241, 525 )
+scale = Vector2( 0.0688477, 19 )
+texture = SubResource( 2 )
+
+[node name="Sprite13" parent="." instance=ExtResource( 2 )]
+position = Vector2( 675, 525 )
+scale = Vector2( 0.0688477, 19 )
+texture = SubResource( 2 )
+
+[node name="Sprite14" parent="." instance=ExtResource( 2 )]
+position = Vector2( 472, 525 )
+scale = Vector2( 0.0688477, 19 )
+texture = SubResource( 2 )
+
+[node name="Spike" parent="." instance=ExtResource( 4 )]
+position = Vector2( 239, 499 )
+scale = Vector2( 1, 2 )
+
+[node name="Spike2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 675, 499 )
+scale = Vector2( 1, 2 )
+collision_layer = 0
+collision_mask = 0
+
+[node name="Spike3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 461, 502 )
+scale = Vector2( 1, 2 )
+collision_layer = 0
+collision_mask = 0
+
+[node name="Spike4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 671, 554 )
+rotation = 3.14159
+scale = Vector2( 1, 2 )
+
+[node name="Spike5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 472, 552 )
+rotation = 3.14159
+scale = Vector2( 1, 2 )
+
+[node name="Spike6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 237, 554 )
+rotation = 3.14159
+scale = Vector2( 1, 2 )
+collision_layer = 0
+collision_mask = 0
+
+[node name="Sprite8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 516.75, 399.5 )
+scale = Vector2( 0.186768, 17 )
+texture = SubResource( 2 )
+
+[node name="Sprite9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 547, 229.5 )
+scale = Vector2( 0.161621, 17 )
+texture = SubResource( 2 )
+
+[node name="Sprite10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 866, 297.5 )
+scale = Vector2( 0.161621, 15 )
+texture = SubResource( 2 )
+
+[node name="Sprite12" parent="." instance=ExtResource( 2 )]
+position = Vector2( 104.75, 523 )
+scale = Vector2( 0.0422363, 20 )
+texture = SubResource( 2 )
+
+[node name="ExitArea" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1098, 78 )
+scale = Vector2( 1, 2 )
+target = "level10"
+
+[node name="Sprite15" parent="." instance=ExtResource( 2 )]
+position = Vector2( 895.75, 179.5 )
+scale = Vector2( 0.104248, 13 )
+texture = SubResource( 2 )
