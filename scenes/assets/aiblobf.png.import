@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/water.png-60eb5d11192d61f791951f83acef7554.stex"
+path="res://.import/aiblobf.png-b75207f1c6a99eea80e0222f631e44ac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/water.png"
-dest_files=[ "res://.import/water.png-60eb5d11192d61f791951f83acef7554.stex" ]
+source_file="res://scenes/assets/aiblobf.png"
+dest_files=[ "res://.import/aiblobf.png-b75207f1c6a99eea80e0222f631e44ac.stex" ]
 
 [params]
 

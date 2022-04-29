@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pbutton.png-7d2b40a6efd50204b599bdd942b24045.stex"
+path="res://.import/vine.png-a158b8be46707a1ce78b8b5442cb929e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/pbutton.png"
-dest_files=[ "res://.import/pbutton.png-7d2b40a6efd50204b599bdd942b24045.stex" ]
+source_file="res://scenes/assets/vine.png"
+dest_files=[ "res://.import/vine.png-a158b8be46707a1ce78b8b5442cb929e.stex" ]
 
 [params]
 

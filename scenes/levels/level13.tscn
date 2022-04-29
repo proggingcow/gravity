@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/button.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/aiblob.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/water.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/ceartainonly.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=7]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="blob" parent="." instance=ExtResource( 1 )]
+position = Vector2( 466, 536 )
+
+[node name="Sprite" parent="." instance=ExtResource( 2 )]
+position = Vector2( 429, 600 )
+scale = Vector2( 0.0888672, 100 )
+
+[node name="RigidBody2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 466, 406 )
+
+[node name="Sprite2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 464, 14 )
+scale = Vector2( 0.0585937, 490 )
+
+[node name="Sprite3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 500, 394 )
+scale = Vector2( 0.0234375, 464 )
+
+[node name="ceartainonly" parent="." instance=ExtResource( 6 )]
+show_behind_parent = true
+position = Vector2( 429.625, 429 )
+scale = Vector2( 0.0250243, 536 )
+
+[node name="Area2D2" parent="." instance=ExtResource( 3 )]
+show_behind_parent = true
+position = Vector2( 466, 264.5 )
+rotation = 3.14159
+
+[node name="Sprite2" parent="Area2D2" instance=ExtResource( 2 )]
+position = Vector2( 36.5409, -129.5 )
+rotation = 3.14159
+scale = Vector2( 0.0259189, 464 )
+
+[node name="Area2D" parent="Area2D2/Sprite2" instance=ExtResource( 5 )]
+show_behind_parent = true
+position = Vector2( 1448.4, 0.140086 )
+rotation = 3.55116e-12
+scale = Vector2( 38.582, 0.00215517 )
+flow = Vector2( 0, -10 )
+
+[node name="Sprite4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 139.5, 600 )
+scale = Vector2( 0.14502, 100 )
+
+[node name="ExitArea" parent="." instance=ExtResource( 7 )]
+position = Vector2( 308, 679 )
+target = "level_chooser"
+
+[node name="Area2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 461.5, 513 )
+rotation = 1.5708
+
+[node name="Sprite2" parent="Area2D" instance=ExtResource( 2 )]
+position = Vector2( -135, -12.5 )
+rotation = -1.5708
+scale = Vector2( 0.0454102, 36 )
