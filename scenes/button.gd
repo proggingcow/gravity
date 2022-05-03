@@ -8,10 +8,5 @@ func _ready():
 
 # warning-ignore:unused_argument
 func _process(delta):
-	if p == false:
-		if get_overlapping_bodies().size() > 0:
-# warning-ignore:standalone_expression
-			p==true
-			$Sprite.texture = load("res://assets/pbutton.png")
-			remove_child($Sprite2)
-			
+	if get_overlapping_bodies().size() > 0:
+		get_parent().remove_child(self)
