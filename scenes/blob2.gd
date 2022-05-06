@@ -4,6 +4,7 @@ func _input(event):
 	if event is InputEventKey :
 		if event.pressed and event.scancode == KEY_W and ($Feet.get_overlapping_bodies().size() > 0) :
 			apply_central_impulse(Vector2(0,-200))
+			$AudioStreamPlayer2D.play()
 		if event.pressed and event.scancode == KEY_Q:
 			get_tree().quit()
 

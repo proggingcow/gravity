@@ -15,3 +15,4 @@ func _ready():
 func _process(delta):
 	if ($Feet.get_overlapping_bodies().size() > 0) :
 		apply_central_impulse(Vector2(0,-50))
+		$AudioStreamPlayer2D.play()

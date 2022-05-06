@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/aiblob.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://scenes/box.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/fake_wall.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/vine.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=10]
 
 [node name="Node2D" type="Node2D"]
 __meta__ = {
@@ -76,18 +77,6 @@ scale = Vector2( 0.00195314, 1878 )
 position = Vector2( 310, -890 )
 rotation = -1.35961
 scale = Vector2( 3, 5 )
-
-[node name="Sprite7" parent="." instance=ExtResource( 3 )]
-position = Vector2( 6828, -13.5 )
-scale = Vector2( 0.991211, 3061 )
-
-[node name="Sprite9" parent="." instance=ExtResource( 3 )]
-position = Vector2( 6828, -13.5 )
-scale = Vector2( 0.991211, 3061 )
-
-[node name="Sprite10" parent="." instance=ExtResource( 3 )]
-position = Vector2( 6828, -13.5 )
-scale = Vector2( 0.991211, 3061 )
 
 [node name="Sprite11" parent="." instance=ExtResource( 3 )]
 position = Vector2( 2219, 235 )
@@ -246,5 +235,10 @@ position = Vector2( 17, -1029 )
 scale = Vector2( 0.00878906, 274 )
 
 [node name="vine" parent="." instance=ExtResource( 9 )]
-position = Vector2( 2453, -819 )
-scale = Vector2( 99.1507, 83.9773 )
+position = Vector2( 2080, -798 )
+scale = Vector2( 27.7107, 83.9773 )
+
+[node name="ExitArea" parent="." instance=ExtResource( 10 )]
+position = Vector2( -139, -1010 )
+scale = Vector2( 2.34085, 4.44857 )
+target = "level_chooser"

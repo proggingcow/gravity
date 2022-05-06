@@ -12,7 +12,7 @@
 
 [node name="Area2D" parent="." instance=ExtResource( 7 )]
 show_behind_parent = true
-position = Vector2( -324, -251 )
+position = Vector2( -310, -251 )
 scale = Vector2( 5.5, 6.3 )
 flow = Vector2( 0, -4.5 )
 
@@ -122,7 +122,7 @@ scale = Vector2( 1.5, 20 )
 
 [node name="Spike4" parent="." instance=ExtResource( 5 )]
 show_behind_parent = false
-position = Vector2( -369, -116 )
+position = Vector2( -469, -135 )
 rotation = 1.5708
 scale = Vector2( 1.5, 20 )
 
@@ -140,7 +140,7 @@ scale = Vector2( 3, 10 )
 
 [node name="Spike7" parent="." instance=ExtResource( 5 )]
 show_behind_parent = false
-position = Vector2( -312, -212 )
+position = Vector2( -212, -212 )
 rotation = -1.5708
 scale = Vector2( 1.5, 24 )
 
