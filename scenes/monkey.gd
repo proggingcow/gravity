@@ -1,5 +1,16 @@
 extends RigidBody2D
 
+func _ready():
+	var date = OS.get_date()
+	if date.month == 5:
+		$Sprite3.texture = load("res://scenes/assets/blobcat.png")
+	if date.month == 2:
+		$Sprite3.texture = load("res://scenes/assets/blobred.png")
+	if date.month == 8:
+		$Sprite3.texture = load("res://scenes/assets/blobthebonkers.png")
+	if date.month == 10:
+		$Sprite3.texture = load("res://scenes/assets/fishblob.png")
+
 func _input(event):
 	if event is InputEventKey :
 		if event.pressed and event.scancode == KEY_UP and ($Feet.get_overlapping_bodies().size() > 0) :

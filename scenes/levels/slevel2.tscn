@@ -33,8 +33,8 @@ scale = Vector2( 0.161377, 47 )
 texture = SubResource( 2 )
 
 [node name="Sprite5" parent="." instance=ExtResource( 2 )]
-position = Vector2( -1007, 274 )
-scale = Vector2( 0.991211, 682 )
+position = Vector2( -1005.5, 269.5 )
+scale = Vector2( 0.992676, 673 )
 texture = SubResource( 2 )
 
 [node name="Sprite6" parent="." instance=ExtResource( 2 )]
@@ -50,18 +50,18 @@ texture = SubResource( 2 )
 position = Vector2( 893, 579.5 )
 
 [node name="Sprite2" parent="Area2D" instance=ExtResource( 2 )]
-position = Vector2( 129, -498.5 )
+position = Vector2( 45, -500.5 )
 scale = Vector2( 0.0166016, 266 )
 texture = SubResource( 2 )
 
-[node name="Sprite12" parent="Area2D" instance=ExtResource( 2 )]
-position = Vector2( -341, -103.5 )
+[node name="Sprite16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 552, 476 )
 scale = Vector2( 0.40332, 12.0001 )
 texture = SubResource( 2 )
 
 [node name="Sprite11" parent="." instance=ExtResource( 2 )]
-position = Vector2( 241, 525 )
-scale = Vector2( 0.0688477, 19 )
+position = Vector2( 203.75, 525 )
+scale = Vector2( 0.105225, 19 )
 texture = SubResource( 2 )
 
 [node name="Sprite13" parent="." instance=ExtResource( 2 )]
@@ -122,17 +122,17 @@ position = Vector2( 866, 297.5 )
 scale = Vector2( 0.161621, 15 )
 texture = SubResource( 2 )
 
-[node name="Sprite12" parent="." instance=ExtResource( 2 )]
-position = Vector2( 104.75, 523 )
-scale = Vector2( 0.0422363, 20 )
-texture = SubResource( 2 )
-
-[node name="ExitArea" parent="." instance=ExtResource( 5 )]
-position = Vector2( 1098, 78 )
-scale = Vector2( 1, 2 )
-target = "level10"
-
 [node name="Sprite15" parent="." instance=ExtResource( 2 )]
 position = Vector2( 895.75, 179.5 )
 scale = Vector2( 0.104248, 13 )
 texture = SubResource( 2 )
+
+[node name="Sprite17" parent="." instance=ExtResource( 2 )]
+position = Vector2( 1981, 385 )
+scale = Vector2( 0.947266, 466 )
+texture = SubResource( 2 )
+
+[node name="ExitArea2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 1125, 95 )
+scale = Vector2( 1, 2 )
+target = "level10"
