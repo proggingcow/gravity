@@ -33,13 +33,11 @@ text = "world 1"
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="."]
 show_behind_parent = true
-margin_left = 476.0
-margin_top = 511.0
-margin_right = 561.0
-margin_bottom = 586.0
-text = "world 2
-playable,
-under construction"
+margin_left = 492.0
+margin_top = 510.0
+margin_right = 577.0
+margin_bottom = 585.0
+text = "world 2"
 
 [node name="ExitArea5" parent="." instance=ExtResource( 3 )]
 position = Vector2( 518, 673 )
