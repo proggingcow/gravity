@@ -12,6 +12,7 @@ gradient = ExtResource( 1 )
 extents = Vector2( 1024, 0.0108695 )
 
 [node name="oneway" type="Sprite"]
+show_behind_parent = true
 scale = Vector2( 0.0869141, 23 )
 texture = SubResource( 5 )
 

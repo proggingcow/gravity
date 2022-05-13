@@ -47,6 +47,7 @@ target = "level8"
 [node name="ExitArea6" parent="." instance=ExtResource( 3 )]
 position = Vector2( 832, 720 )
 scale = Vector2( 1, 2 )
+target = "level15"
 
 [node name="Sprite10" parent="." instance=ExtResource( 2 )]
 position = Vector2( 21.0001, 536.5 )
@@ -105,13 +106,19 @@ scale = Vector2( 0.108887, 178 )
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="."]
 show_behind_parent = true
-margin_left = 790.0
-margin_top = 508.0
-margin_right = 875.0
-margin_bottom = 589.0
+margin_left = 809.0
+margin_top = 504.0
+margin_right = 894.0
+margin_bottom = 585.0
 text = "world 3
-soon under construction"
+"
 
-[node name="Sprite9" parent="." instance=ExtResource( 2 )]
-position = Vector2( 929, 483.5 )
-scale = Vector2( 0.163086, 25 )
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+show_behind_parent = true
+margin_left = 283.0
+margin_top = 8.0
+margin_right = 433.0
+margin_bottom = 89.0
+rect_scale = Vector2( 3, 3 )
+text = "
+level 3-2 in progress"

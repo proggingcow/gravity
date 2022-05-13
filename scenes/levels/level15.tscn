@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/lava.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/vine.tscn" type="PackedScene" id=5]
+
+[node name="Node2D" type="Node2D"]
+position = Vector2( 0, -40 )
+
+[node name="blob" parent="." instance=ExtResource( 1 )]
+position = Vector2( 248, 504 )
+
+[node name="Sprite" parent="." instance=ExtResource( 3 )]
+position = Vector2( 296, 694 )
+scale = Vector2( 0.991211, 288 )
+
+[node name="Sprite8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 481, -64.9999 )
+
+[node name="Sprite9" parent="." instance=ExtResource( 3 )]
+position = Vector2( 2018, 459 )
+scale = Vector2( 0.991211, 446 )
+
+[node name="Sprite10" parent="." instance=ExtResource( 3 )]
+position = Vector2( -915, 254.5 )
+scale = Vector2( 0.991211, 717 )
+
+[node name="ExitArea" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1126, 149 )
+scale = Vector2( 1, 2 )
+target = "level_chooser"
+
+[node name="Sprite11" parent="." instance=ExtResource( 3 )]
+position = Vector2( 826, 298 )
+scale = Vector2( 0.0327148, 18.7501 )
+
+[node name="Sprite12" parent="." instance=ExtResource( 3 )]
+position = Vector2( 222, 369 )
+scale = Vector2( 0.370606, 37.75 )
+
+[node name="Sprite13" parent="." instance=ExtResource( 3 )]
+position = Vector2( 955, 539.625 )
+scale = Vector2( 0.11377, 76.7501 )
+
+[node name="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 539, 1094 )
+scale = Vector2( 11, 10 )
+rise = Vector2( 0, -0.2 )
+
+[node name="vine" parent="." instance=ExtResource( 5 )]
+position = Vector2( 711, 430 )
+scale = Vector2( 5.26111, 9.68887 )

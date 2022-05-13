@@ -9,7 +9,7 @@ func _ready():
 	if date.month == 8:
 		$Sprite3.texture = load("res://scenes/assets/blobthebonkers.png")
 	if date.month == 10:
-		$Sprite3.texture = load("res://scenes/assets/fishblob.png")
+		$Sprite3.texture = load("res://scenes/assets/pandablob.png")
 
 func _input(event):
 	if event is InputEventKey :
