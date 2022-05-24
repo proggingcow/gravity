@@ -127,12 +127,7 @@ position = Vector2( 895.75, 179.5 )
 scale = Vector2( 0.104248, 13 )
 texture = SubResource( 2 )
 
-[node name="Sprite17" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1981, 385 )
-scale = Vector2( 0.947266, 466 )
-texture = SubResource( 2 )
-
 [node name="ExitArea2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1125, 95 )
 scale = Vector2( 1, 2 )
-target = "level10"
+target = "level11"

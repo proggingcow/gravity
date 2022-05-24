@@ -17,7 +17,8 @@ position = Vector2( 296, 694 )
 scale = Vector2( 0.991211, 288 )
 
 [node name="Sprite8" parent="." instance=ExtResource( 3 )]
-position = Vector2( 481, -64.9999 )
+position = Vector2( 481, -60 )
+scale = Vector2( 0.991211, 276 )
 
 [node name="Sprite9" parent="." instance=ExtResource( 3 )]
 position = Vector2( 2018, 459 )
@@ -28,9 +29,9 @@ position = Vector2( -915, 254.5 )
 scale = Vector2( 0.991211, 717 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 4 )]
-position = Vector2( 1126, 149 )
+position = Vector2( 1145, 156 )
 scale = Vector2( 1, 2 )
-target = "level_chooser"
+target = "level16"
 
 [node name="Sprite11" parent="." instance=ExtResource( 3 )]
 position = Vector2( 826, 298 )
