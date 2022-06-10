@@ -1,7 +1,7 @@
 extends Node2D
 
 export var delay = 5
-export var interval = 5
+export var interval = 5.0
 export var ball_velocity = Vector2(0,0)
 
 var ballclass = preload("res://scenes/deathball.tscn")

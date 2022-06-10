@@ -103,10 +103,6 @@ scale = Vector2( 6, 9 )
 position = Vector2( 880, 450 )
 rotation = -1.5708
 
-[node name="Spike12" parent="." instance=ExtResource( 4 )]
-position = Vector2( 598, 246 )
-scale = Vector2( 6, 1 )
-
 [node name="Area2D" parent="." instance=ExtResource( 6 )]
 position = Vector2( 61.5, 56 )
 rotation = 1.5708

@@ -25,11 +25,11 @@ position = Vector2( 1025, -32.5 )
 scale = Vector2( 0.0151367, 165 )
 
 [node name="Sprite5" parent="." instance=ExtResource( 1 )]
-position = Vector2( 0, 245.75 )
-scale = Vector2( 0.0151367, 733.5 )
+position = Vector2( 0, 234.5 )
+scale = Vector2( 0.0151367, 711 )
 
 [node name="blob" parent="." instance=ExtResource( 3 )]
-position = Vector2( 46, 554 )
+position = Vector2( 33, 540 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 2 )]
 position = Vector2( 972, -68 )
@@ -42,7 +42,7 @@ scale = Vector2( 0.0732422, 4.99988 )
 [node name="Node2D" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1038, 64 )
 delay = 0
-interval = 3
+interval = 2.8
 ball_velocity = Vector2( -3, 0 )
 
 [node name="Sprite7" parent="." instance=ExtResource( 1 )]
