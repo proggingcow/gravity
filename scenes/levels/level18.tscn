@@ -53,3 +53,4 @@ move = 2.0
 
 [node name="ExitArea" parent="." instance=ExtResource( 4 )]
 position = Vector2( 1079, 505 )
+target = "level19"

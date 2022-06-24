@@ -1,17 +1,69 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/ghost.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/button.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/deathball.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Node2D" parent="." instance=ExtResource( 1 )]
-position = Vector2( 666, 486 )
-move = -100.0
+position = Vector2( 582, 561 )
+scale = Vector2( 2, 2 )
+move = 1.0
 
 [node name="blob" parent="." instance=ExtResource( 2 )]
 position = Vector2( 97, 524 )
 
 [node name="Node2D2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 666, 452 )
-move = -100.0
+position = Vector2( 556, 512 )
+scale = Vector2( 2, 2 )
+move = 1.2
+
+[node name="Sprite2" parent="." instance=ExtResource( 3 )]
+position = Vector2( -978, 213.5 )
+scale = Vector2( 0.991211, 929 )
+
+[node name="Sprite3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1903, 230 )
+scale = Vector2( 0.991211, 710 )
+
+[node name="Sprite4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 407, -81.9999 )
+
+[node name="Node2D3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 614, 543 )
+scale = Vector2( 2, 2 )
+move = 1.5
+
+[node name="Sprite5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 479, 207 )
+rotation = -3.3999
+scale = Vector2( 0.991211, 37 )
+
+[node name="Sprite6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 273.489, 82.1526 )
+rotation = -3.3999
+scale = Vector2( 0.991211, 189.763 )
+
+[node name="Area2D" parent="." instance=ExtResource( 4 )]
+show_behind_parent = true
+position = Vector2( 48, 272 )
+rotation = 1.5708
+scale = Vector2( 3, 2 )
+
+[node name="Sprite2" parent="Area2D" instance=ExtResource( 3 )]
+position = Vector2( 147, -231 )
+rotation = -1.5708
+scale = Vector2( 0.495605, 88.6667 )
+
+[node name="RigidBody2D" parent="." instance=ExtResource( 5 )]
+position = Vector2( 874, 64 )
+gravity_scale = 0.5
+
+[node name="ExitArea" parent="." instance=ExtResource( 6 )]
+position = Vector2( 462, 645 )
+scale = Vector2( 10, 1 )
+target = "level_chooser"

@@ -14,7 +14,7 @@ rise = Vector2( 0, -0.4 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 4 )]
 position = Vector2( -110, 183 )
-target = "level_chooser"
+target = "level18"
 
 [node name="Sprite" parent="." instance=ExtResource( 3 )]
 show_behind_parent = true

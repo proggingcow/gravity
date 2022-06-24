@@ -9,7 +9,7 @@
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.0
 rough = true
-bounce = 1.0
+bounce = 2.0
 
 [node name="Node2D" type="Node2D"]
 __meta__ = {

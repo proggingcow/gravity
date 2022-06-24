@@ -14,7 +14,7 @@ config/name="Blob Jump"
 run/main_scene="res://scenes/levels/tutorial.tscn"
 boot_splash/image="res://iconl.png"
 boot_splash/fullsize=false
-boot_splash/bg_color=Color( 0.458824, 0.0823529, 0.0823529, 1 )
+boot_splash/bg_color=Color( 0.654902, 0.121569, 0.121569, 1 )
 config/icon="res://icon.png"
 
 [debug]
@@ -32,8 +32,7 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
-quality/driver/driver_name="GLES2"
 vram_compression/import_etc=true
 vram_compression/import_etc2=false
-environment/default_clear_color=Color( 0.458824, 0.0823529, 0.0823529, 1 )
+environment/default_clear_color=Color( 0.654902, 0.121569, 0.121569, 1 )
 environment/default_environment="res://default_env.tres"
