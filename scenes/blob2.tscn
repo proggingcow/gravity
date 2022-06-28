@@ -53,6 +53,6 @@ polygon = PoolVector2Array( -9, 5.7905, -5, 10.0815, 5, 10.0815, 9, 6.83667, 9, 
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 3 )
-pitch_scale = 20.0
+pitch_scale = 10.0
 
 [connection signal="area_entered" from="Suround" to="." method="_on_Suround_area_entered"]

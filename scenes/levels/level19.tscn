@@ -18,7 +18,7 @@ move = 1.0
 position = Vector2( 97, 524 )
 
 [node name="Node2D2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 556, 512 )
+position = Vector2( 556, 506 )
 scale = Vector2( 2, 2 )
 move = 1.2
 
@@ -34,7 +34,7 @@ scale = Vector2( 0.991211, 710 )
 position = Vector2( 407, -81.9999 )
 
 [node name="Node2D3" parent="." instance=ExtResource( 1 )]
-position = Vector2( 614, 543 )
+position = Vector2( 614, 538 )
 scale = Vector2( 2, 2 )
 move = 1.5
 
@@ -66,4 +66,4 @@ gravity_scale = 0.5
 [node name="ExitArea" parent="." instance=ExtResource( 6 )]
 position = Vector2( 462, 645 )
 scale = Vector2( 10, 1 )
-target = "level_chooser"
+target = "level20"

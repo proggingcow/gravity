@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://scenes/button.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/fake_wall.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/ghost.tscn" type="PackedScene" id=9]
+[ext_resource path="res://scenes/exitwithoutfullscreen.gd" type="Script" id=10]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=11]
 
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.0
@@ -21,8 +23,8 @@ bounce = 2.0
 position = Vector2( 120, 179 )
 
 [node name="Sprite" parent="." instance=ExtResource( 2 )]
-position = Vector2( 291.5, 256 )
-scale = Vector2( 0.365723, 46 )
+position = Vector2( 334.5, 260.5 )
+scale = Vector2( 0.283691, 55 )
 
 [node name="RigidBody2D" parent="." instance=ExtResource( 3 )]
 position = Vector2( 524, 208 )
@@ -72,12 +74,12 @@ position = Vector2( 511.25, -14 )
 scale = Vector2( 0.538818, 46 )
 
 [node name="Sprite4" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1071.5, 375 )
-scale = Vector2( 0.0883789, 284 )
+position = Vector2( 1086.5, 375 )
+scale = Vector2( 0.103027, 284 )
 
 [node name="Sprite5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 644.5, 219 )
-scale = Vector2( 0.0209961, 286 )
+position = Vector2( 617, 324 )
+scale = Vector2( 0.0078125, 78 )
 
 [node name="vine" parent="." instance=ExtResource( 6 )]
 position = Vector2( 601, 152 )
@@ -88,19 +90,57 @@ position = Vector2( 45.25, 559 )
 scale = Vector2( 1.00952, 104 )
 
 [node name="Sprite7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 780.5, 348 )
-scale = Vector2( 0.153809, 30 )
+position = Vector2( 738.5, 348 )
+scale = Vector2( 0.112793, 30 )
 
 [node name="Sprite8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 1014, 256 )
-scale = Vector2( 0.113281, 46 )
+position = Vector2( 989, 256 )
+scale = Vector2( 0.137695, 46 )
 
 [node name="Area2D" parent="." instance=ExtResource( 7 )]
-position = Vector2( 792, 325 )
+position = Vector2( 789, 324 )
 scale = Vector2( 15, 1 )
 
-[node name="Sprite9" parent="." instance=ExtResource( 8 )]
-position = Vector2( 1308, 612 )
+[node name="Sprite9" parent="Area2D" instance=ExtResource( 8 )]
+position = Vector2( -25.3666, 77 )
+scale = Vector2( 0.0423503, 337.046 )
+
+[node name="Sprite10" parent="Area2D" instance=ExtResource( 2 )]
+position = Vector2( -8.56667, -23.5 )
+scale = Vector2( 0.000358073, 123 )
 
 [node name="Node2D" parent="." instance=ExtResource( 9 )]
-position = Vector2( 923, 421 )
+show_behind_parent = true
+position = Vector2( 639, 297 )
+scale = Vector2( 2, 4 )
+move = 1.0
+
+[node name="Sprite9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 644.5, 162 )
+scale = Vector2( 0.0209961, 172 )
+
+[node name="ExitArea" parent="." instance=ExtResource( 11 )]
+position = Vector2( -76, 481 )
+target = "level_chooser"
+
+[node name="ExitArea2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1102, 132 )
+scale = Vector2( 1, 5 )
+script = ExtResource( 10 )
+target = "level_chooser"
+
+[node name="Node2D2" parent="." instance=ExtResource( 9 )]
+show_behind_parent = true
+position = Vector2( 93, 458 )
+rotation = 1.5708
+scale = Vector2( 3, 3 )
+right = true
+move = -1.5
+
+[node name="Sprite10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 286.5, 467 )
+scale = Vector2( 0.0649414, 288 )
+
+[node name="vine2" parent="." instance=ExtResource( 6 )]
+position = Vector2( 379, 408 )
+scale = Vector2( 4.16, 15.76 )

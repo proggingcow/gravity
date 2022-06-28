@@ -13,7 +13,7 @@
 position = Vector2( 347, 562 )
 rotation = 1.5708
 
-[node name="Spike2" parent="RigidBody2D4" instance=ExtResource( 6 )]
+[node name="Spike" parent="RigidBody2D4" instance=ExtResource( 6 )]
 position = Vector2( 6.10352e-05, 21 )
 rotation = 3.14159
 
@@ -21,13 +21,17 @@ rotation = 3.14159
 position = Vector2( 348, 528 )
 rotation = 1.5708
 
-[node name="Spike2" parent="RigidBody2D3" instance=ExtResource( 6 )]
+[node name="Spike" parent="RigidBody2D3" instance=ExtResource( 6 )]
 position = Vector2( 6.10352e-05, 21 )
 rotation = 3.14159
 
 [node name="RigidBody2D2" parent="." instance=ExtResource( 4 )]
 position = Vector2( 347, 489 )
 rotation = 1.5708
+
+[node name="Spike" parent="RigidBody2D2" instance=ExtResource( 6 )]
+position = Vector2( 6.10352e-05, 21 )
+rotation = 3.14159
 
 [node name="Spike" parent="." instance=ExtResource( 6 )]
 position = Vector2( 650, 371 )
