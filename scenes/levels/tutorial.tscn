@@ -26,8 +26,8 @@ position = Vector2( 1532.44, 415.078 )
 scale = Vector2( 0.52, 375.1 )
 
 [node name="Sprite5" parent="." instance=ExtResource( 2 )]
-position = Vector2( 489, 570.25 )
-scale = Vector2( 0.156128, 79.5 )
+position = Vector2( 489, 577.5 )
+scale = Vector2( 0.156128, 65 )
 
 [node name="Sprite6" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1003.74, 311.743 )
@@ -39,8 +39,8 @@ position = Vector2( 626.375, 364.25 )
 scale = Vector2( 0.154663, 31.5001 )
 
 [node name="Sprite8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 943, 496 )
-scale = Vector2( 0.0668946, 29 )
+position = Vector2( 943, 509.75 )
+scale = Vector2( 0.0668946, 56.5 )
 
 [node name="Sprite9" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1531.88, 42.8125 )
@@ -82,3 +82,7 @@ margin_bottom = 104.0
 rect_scale = Vector2( 2, 2 )
 text = "Arrow keys to move. Escape to go to main scene (not here). Get to the hole in the wall (the win for this tutorial level is there). R to restart. F to fullscreen. Q to quit"
 scroll_active = false
+
+[node name="Sprite16" parent="." instance=ExtResource( 2 )]
+position = Vector2( 898.75, 532.5 )
+scale = Vector2( 0.110107, 29 )

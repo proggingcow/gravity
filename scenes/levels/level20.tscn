@@ -127,7 +127,7 @@ target = "level_chooser"
 position = Vector2( 1102, 132 )
 scale = Vector2( 1, 5 )
 script = ExtResource( 10 )
-target = "level_chooser"
+target = "level21"
 
 [node name="Node2D2" parent="." instance=ExtResource( 9 )]
 show_behind_parent = true
