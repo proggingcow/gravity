@@ -13,7 +13,8 @@ scale = Vector2( 12, 12 )
 rise = Vector2( 0, -0.4 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 4 )]
-position = Vector2( -110, 183 )
+position = Vector2( -105, 204 )
+scale = Vector2( 1, 2 )
 target = "level18"
 
 [node name="Sprite" parent="." instance=ExtResource( 3 )]
@@ -32,8 +33,8 @@ position = Vector2( 534, -116 )
 
 [node name="Sprite4" parent="." instance=ExtResource( 3 )]
 show_behind_parent = true
-position = Vector2( -962, 420.5 )
-scale = Vector2( 0.991211, 391 )
+position = Vector2( -962, 446 )
+scale = Vector2( 0.991211, 340 )
 
 [node name="Sprite5" parent="." instance=ExtResource( 3 )]
 show_behind_parent = true
@@ -49,7 +50,7 @@ position = Vector2( -918, 0.999985 )
 
 [node name="Sprite7" parent="." instance=ExtResource( 3 )]
 show_behind_parent = true
-position = Vector2( 51, 290 )
+position = Vector2( 52.0025, 311 )
 rotation = 0.785398
 scale = Vector2( 0.0107422, 25.4999 )
 

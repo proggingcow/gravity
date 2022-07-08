@@ -1,4 +1,4 @@
-extends AnimatedSprite
+extends Sprite
 
 
 # Declare member variables here. Examples:
@@ -14,5 +14,11 @@ func _ready():
 
 func _process(delta):
 	x -= delta
+	if x <= 0.3:
+		texture = load("res://scenes/assets/jump-anim/2.png")
+	if x <= 0.2:
+		texture = load("res://scenes/assets/jump-anim/3.png")
+	if x <= 0.1:
+		texture = load("res://scenes/assets/jump-anim/4.png")
 	if x <= 0:
 		get_parent().remove_child(self)

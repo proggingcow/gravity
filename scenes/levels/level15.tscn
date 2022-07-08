@@ -34,8 +34,8 @@ scale = Vector2( 1, 2 )
 target = "level16"
 
 [node name="Sprite11" parent="." instance=ExtResource( 3 )]
-position = Vector2( 826, 298 )
-scale = Vector2( 0.0327148, 18.7501 )
+position = Vector2( 826, 301.812 )
+scale = Vector2( 0.0327148, 26.375 )
 
 [node name="Sprite12" parent="." instance=ExtResource( 3 )]
 position = Vector2( 222, 369 )
@@ -53,3 +53,7 @@ rise = Vector2( 0, -0.2 )
 [node name="vine" parent="." instance=ExtResource( 5 )]
 position = Vector2( 711, 430 )
 scale = Vector2( 5.26111, 9.68887 )
+
+[node name="Sprite14" parent="." instance=ExtResource( 3 )]
+position = Vector2( 799.75, 325 )
+scale = Vector2( 0.0583496, 22 )

@@ -36,8 +36,10 @@ func _process(_delta):
 			apply_central_impulse(Vector2(0,-180))
 			$AudioStreamPlayer2D.play()
 			jump = false
-			particle.position.x = position.x
-			particle.position.y = position.y + 8
+			var JA = particle.instance()
+			JA.position.x = position.x
+			JA.position.y = position.y + 8
+			get_parent().add_child(JA)
 	else:
 		jump = true
 	if Input.is_key_pressed(KEY_RIGHT):

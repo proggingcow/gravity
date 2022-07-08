@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://scenes/assets/blob.png" type="Texture" id=1]
 [ext_resource path="res://scenes/monkey.gd" type="Script" id=2]
@@ -7,10 +7,6 @@
 [ext_resource path="res://scenes/assets/dust-anim/2.png" type="Texture" id=5]
 [ext_resource path="res://scenes/assets/dust-anim/3.png" type="Texture" id=6]
 [ext_resource path="res://step.wav" type="AudioStream" id=7]
-[ext_resource path="res://scenes/assets/jump-anim/4.png" type="Texture" id=8]
-[ext_resource path="res://scenes/assets/jump-anim/2.png" type="Texture" id=9]
-[ext_resource path="res://scenes/assets/jump-anim/3.png" type="Texture" id=10]
-[ext_resource path="res://scenes/assets/jump-anim/1.png" type="Texture" id=11]
 
 [sub_resource type="PhysicsMaterial" id=1]
 bounce = 0.2
@@ -18,14 +14,6 @@ bounce = 0.2
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "default",
-"speed": 10.0
-} ]
-
-[sub_resource type="SpriteFrames" id=3]
-animations = [ {
-"frames": [ ExtResource( 11 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "default",
 "speed": 10.0
@@ -65,7 +53,7 @@ collision_mask = 512
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="water_zone"]
 position = Vector2( 0, -0.534968 )
 scale = Vector2( 1, 0.95587 )
-polygon = PoolVector2Array( -9, 5.7905, -5, 10.0815, 5, 10.0815, 9, 6.83667, 9, 2, 8, 1, 8, 0, 7, -2, 1, -7, -2, -7, -8, 0, -8, 0, -8, 1, -9, 2 )
+polygon = PoolVector2Array( -9, 5.7905, -4, 11.0213, 4, 11.0213, 9, 6.83667, 9, 2, 8, 1.60583, 8, 0, 7, -2, 1, -7, -2, -7, -8, 0, -8, 0, -8, 1.60583, -9, 2 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( 0, -0.534968 )
@@ -83,13 +71,10 @@ texture = ExtResource( 1 )
 visible = false
 position = Vector2( 8, 5 )
 frames = SubResource( 2 )
+frame = 2
 playing = true
 
 [node name="step" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 7 )
-
-[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, 8 )
-frames = SubResource( 3 )
 
 [connection signal="area_entered" from="Suround" to="." method="_on_Suround_area_entered"]
