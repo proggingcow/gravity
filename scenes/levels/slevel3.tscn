@@ -39,14 +39,14 @@ scale = Vector2( 11, 10 )
 rise = Vector2( 0, -0.5 )
 
 [node name="Camera2D" type="Camera2D" parent="Area2D"]
-position = Vector2( -90.3636, -69.4 )
+position = Vector2( -156.636, -71.5 )
 current = true
 limit_left = 0
 limit_top = -550
 editor_draw_limits = true
 
 [node name="Area2D2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 495, -419 )
+position = Vector2( 496, -419 )
 rotation = 3.14159
 scale = Vector2( 11, 10 )
 rise = Vector2( 0, -0.5 )
@@ -56,8 +56,8 @@ position = Vector2( 257, 208 )
 
 [node name="Sprite4" parent="." instance=ExtResource( 1 )]
 show_behind_parent = true
-position = Vector2( 170, 36 )
-scale = Vector2( 0.5, 31 )
+position = Vector2( 178.5, 41.75 )
+scale = Vector2( 0.508301, 19.5 )
 texture = SubResource( 2 )
 
 [node name="Sprite5" parent="." instance=ExtResource( 1 )]
@@ -110,8 +110,8 @@ texture = SubResource( 2 )
 
 [node name="Sprite13" parent="." instance=ExtResource( 1 )]
 show_behind_parent = true
-position = Vector2( 1330, -80 )
-scale = Vector2( 0.526367, 80 )
+position = Vector2( 1329.5, -68.5 )
+scale = Vector2( 0.526855, 57 )
 texture = SubResource( 2 )
 
 [node name="Sprite14" parent="." instance=ExtResource( 1 )]
@@ -142,3 +142,21 @@ scale = Vector2( 13.2814, 46.3397 )
 [node name="vine4" parent="." instance=ExtResource( 4 )]
 position = Vector2( 513, -131 )
 scale = Vector2( 32.5287, 4.76018 )
+
+[node name="Sprite16" parent="." instance=ExtResource( 1 )]
+show_behind_parent = true
+position = Vector2( 896, 286 )
+scale = Vector2( 0.529297, 118 )
+texture = SubResource( 2 )
+
+[node name="Sprite17" parent="." instance=ExtResource( 1 )]
+show_behind_parent = true
+position = Vector2( 966.5, 259.5 )
+scale = Vector2( 0.460449, 171 )
+texture = SubResource( 2 )
+
+[node name="Sprite18" parent="." instance=ExtResource( 1 )]
+show_behind_parent = true
+position = Vector2( 1040, 229.5 )
+scale = Vector2( 0.388672, 231 )
+texture = SubResource( 2 )

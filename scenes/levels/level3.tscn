@@ -29,10 +29,6 @@ rotation = 3.14159
 position = Vector2( 347, 489 )
 rotation = 1.5708
 
-[node name="Spike" parent="RigidBody2D2" instance=ExtResource( 6 )]
-position = Vector2( 6.10352e-05, 21 )
-rotation = 3.14159
-
 [node name="Spike" parent="." instance=ExtResource( 6 )]
 position = Vector2( 650, 371 )
 
@@ -123,9 +119,9 @@ rotation = 1.5708
 scale = Vector2( 0.01557, 146.582 )
 
 [node name="Sprite11" parent="." instance=ExtResource( 2 )]
-position = Vector2( 580, 489 )
+position = Vector2( 580, 494.797 )
 rotation = 1.5708
-scale = Vector2( 0.0218729, 135.919 )
+scale = Vector2( 0.0162114, 135.919 )
 
 [node name="Sprite12" parent="." instance=ExtResource( 2 )]
 position = Vector2( 421, 588 )
@@ -171,3 +167,12 @@ scale = Vector2( 0.00259385, 39.6957 )
 position = Vector2( 672, 131 )
 rotation = 1.5708
 scale = Vector2( 0.00259385, 39.6957 )
+
+[node name="vine13" parent="." instance=ExtResource( 5 )]
+position = Vector2( 610, 410 )
+
+[node name="vine14" parent="." instance=ExtResource( 5 )]
+position = Vector2( 610, 420 )
+
+[node name="vine15" parent="." instance=ExtResource( 5 )]
+position = Vector2( 610, 430 )

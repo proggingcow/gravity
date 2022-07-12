@@ -68,8 +68,8 @@ position = Vector2( 342.625, 312 )
 scale = Vector2( 0.0943603, 24.0001 )
 
 [node name="Sprite14" parent="." instance=ExtResource( 2 )]
-position = Vector2( 995.5, 146.875 )
-scale = Vector2( 0.118652, 50.25 )
+position = Vector2( 975.5, 146.875 )
+scale = Vector2( 0.138183, 50.25 )
 
 [node name="Sprite15" parent="." instance=ExtResource( 2 )]
 position = Vector2( 469.312, 172 )
@@ -126,7 +126,7 @@ scale = Vector2( 2, 2 )
 [node name="Spike13" parent="." instance=ExtResource( 5 )]
 position = Vector2( 794, 148 )
 rotation = -1.5708
-scale = Vector2( 4.9, 8 )
+scale = Vector2( 4.9, 4 )
 
 [node name="Spike14" parent="." instance=ExtResource( 5 )]
 position = Vector2( 712, 361 )

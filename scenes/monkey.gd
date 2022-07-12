@@ -8,10 +8,7 @@ func _physics_process(delta):
 
 func _ready():
 	particle = preload("res://scenes/jump-anim.tscn")
-#func _input(event):
-#	if event.is_action_pressed():
-#		if KEY_W:
-#			pass
+
 var x = false
 var t = false
 func _process(_delta):
@@ -32,6 +29,7 @@ func _process(_delta):
 	if Input.is_key_pressed(KEY_UP):
 		if $water_zone.get_overlapping_areas().size() != 0:
 			apply_central_impulse(Vector2(0,-4))
+			jump = true
 		elif ($Feet.get_overlapping_bodies().size() > 0) and jump == true:
 			apply_central_impulse(Vector2(0,-180))
 			$AudioStreamPlayer2D.play()
@@ -40,8 +38,8 @@ func _process(_delta):
 			JA.position.x = position.x
 			JA.position.y = position.y + 8
 			get_parent().add_child(JA)
-	else:
-		jump = true
+		else:
+			jump = true
 	if Input.is_key_pressed(KEY_RIGHT):
 		apply_central_impulse(Vector2(3,0))
 		if $Sprite3.scale.x == 1:
