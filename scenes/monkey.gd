@@ -38,8 +38,8 @@ func _process(_delta):
 			JA.position.x = position.x
 			JA.position.y = position.y + 8
 			get_parent().add_child(JA)
-		else:
-			jump = true
+	else:
+		jump = true
 	if Input.is_key_pressed(KEY_RIGHT):
 		apply_central_impulse(Vector2(3,0))
 		if $Sprite3.scale.x == 1:

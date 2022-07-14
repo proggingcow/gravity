@@ -59,30 +59,9 @@ position = Vector2( 832, 720 )
 scale = Vector2( 1, 2 )
 target = "level15"
 
-[node name="Sprite10" parent="." instance=ExtResource( 2 )]
-position = Vector2( 21.0001, 536.5 )
-scale = Vector2( 0.105469, 247 )
-
 [node name="Sprite13" parent="." instance=ExtResource( 2 )]
-position = Vector2( -7.50001, 4.49998 )
-scale = Vector2( 0.0327148, 625 )
-
-[node name="ExitArea9" parent="." instance=ExtResource( 3 )]
-position = Vector2( -76, 370 )
-script = ExtResource( 5 )
-target = "levelT1"
-
-[node name="RichTextLabel8" type="RichTextLabel" parent="."]
-show_behind_parent = true
-margin_left = 8.0
-margin_top = 351.0
-margin_right = 167.0
-margin_bottom = 391.0
-text = "team mode"
-
-[node name="Sprite14" parent="." instance=ExtResource( 2 )]
-position = Vector2( 21, 320 )
-scale = Vector2( 0.105469, 28 )
+position = Vector2( -7.50001, 163 )
+scale = Vector2( 0.0327148, 942 )
 
 [node name="Sprite15" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1052, 191.5 )

@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/fake_wall.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/vine.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
 
@@ -48,3 +49,8 @@ scale = Vector2( 0.464112, 25.625 )
 [node name="Sprite7" parent="." instance=ExtResource( 3 )]
 position = Vector2( 1983, 194.274 )
 scale = Vector2( 0.991211, 358.547 )
+
+[node name="vine" parent="." instance=ExtResource( 6 )]
+position = Vector2( 965, 515 )
+rotation = 3.14159
+scale = Vector2( 3.35114, 8.06902 )
