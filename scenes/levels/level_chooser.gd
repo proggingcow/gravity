@@ -1,7 +1,7 @@
 extends Node2D
 func _ready():
 	var file = File.new()
-	file.open("res://progress.txt", file.READ)
+	file.open("res://.blobjumpprogress.txt", file.READ)
 	var number = int(file.get_line())
 	file.close()
 	if number > 0.5:

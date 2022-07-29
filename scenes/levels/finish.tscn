@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://finish.gd" type="Script" id=1]
-[ext_resource path="res://scenes/assets/finish-parts/1.png" type="Texture" id=2]
+[ext_resource path="res://assets/finish-parts/1.png" type="Texture" id=2]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=3]
 
 [node name="Node2D" type="Node2D"]

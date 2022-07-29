@@ -50,3 +50,11 @@ target = "level11"
 [node name="Sprite10" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1269, 277 )
 scale = Vector2( 0.262207, 618 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 70.0
+margin_top = 44.0
+margin_right = 191.0
+margin_bottom = 170.0
+rect_scale = Vector2( 3, 3 )
+text = "If you jump a the same time as when you crash into a wall at high speed, you jump off that wall!"

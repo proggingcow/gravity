@@ -50,7 +50,7 @@ scale = Vector2( 0.52, 246.375 )
 position = Vector2( 519.25, 602 )
 scale = Vector2( 0.520264, 29 )
 
-[node name="Sprite11" parent="." instance=ExtResource( 2 )]
+[node name="sprite 11" parent="." instance=ExtResource( 2 )]
 position = Vector2( 519.25, 602 )
 scale = Vector2( 0.520264, 29 )
 
@@ -78,7 +78,7 @@ target = "tutorial2"
 margin_left = 21.0
 margin_top = 10.0
 margin_right = 512.0
-margin_bottom = 104.0
+margin_bottom = 56.0
 rect_scale = Vector2( 2, 2 )
 text = "Arrow keys to move. Escape to go to main scene (not here). Get to the hole in the wall (the win for this tutorial level is there). R to restart. F to fullscreen. Q to quit"
 scroll_active = false

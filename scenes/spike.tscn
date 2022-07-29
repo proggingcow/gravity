@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://scenes/assets/spike.png" type="Texture" id=1]
+[ext_resource path="res://assets/spike.png" type="Texture" id=1]
 
 [node name="Spike" type="Area2D"]
 show_behind_parent = true

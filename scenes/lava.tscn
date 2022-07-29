@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://scenes/assets/lava.png" type="Texture" id=1]
+[ext_resource path="res://assets/lava.png" type="Texture" id=1]
 [ext_resource path="res://scenes/lava.gd" type="Script" id=2]
 
 [node name="Area2D" type="Area2D"]

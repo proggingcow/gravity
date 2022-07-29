@@ -1,11 +1,11 @@
 [gd_scene load_steps=10 format=2]
 
-[ext_resource path="res://scenes/assets/blob.png" type="Texture" id=1]
+[ext_resource path="res://assets/blob.png" type="Texture" id=1]
 [ext_resource path="res://scenes/monkey.gd" type="Script" id=2]
 [ext_resource path="res://bloop.wav" type="AudioStream" id=3]
-[ext_resource path="res://scenes/assets/dust-anim/1.png" type="Texture" id=4]
-[ext_resource path="res://scenes/assets/dust-anim/2.png" type="Texture" id=5]
-[ext_resource path="res://scenes/assets/dust-anim/3.png" type="Texture" id=6]
+[ext_resource path="res://assets/dust-anim/1.png" type="Texture" id=4]
+[ext_resource path="res://assets/dust-anim/2.png" type="Texture" id=5]
+[ext_resource path="res://assets/dust-anim/3.png" type="Texture" id=6]
 [ext_resource path="res://step.wav" type="AudioStream" id=7]
 
 [sub_resource type="PhysicsMaterial" id=1]

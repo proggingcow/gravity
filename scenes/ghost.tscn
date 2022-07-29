@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://scenes/assets/ghost.png" type="Texture" id=1]
+[ext_resource path="res://assets/ghost.png" type="Texture" id=1]
 [ext_resource path="res://scenes/ghost.gd" type="Script" id=2]
 [ext_resource path="res://scenes/ghostp2.gd" type="Script" id=3]
 
