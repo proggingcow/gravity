@@ -3,12 +3,12 @@ var number
 var p = false
 func _ready():
 	var file = File.new()
-	file.open("res://.blobjumpprogress.txt", file.READ)
+	file.open("res://../.blobjumpprogress.txt", file.READ)
 	number = int(file.get_line())
 
 func _process(delta):
 	if number < 1.5 and !p and $blob.position.x < 0:
 		var file = File.new()
-		file.open("res://.blobjumpprogress.txt", file.WRITE)
+		file.open("res://../.blobjumpprogress.txt", file.WRITE)
 		file.store_line(str(2))
 		file.close()
