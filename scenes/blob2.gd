@@ -4,7 +4,6 @@ extends RigidBody2D
 func _physics_process(delta):
 	if linear_velocity.y < - 210:
 		linear_velocity.y = -210
-	
 
 func _process(_delta):
 	if Input.is_key_pressed(KEY_A):

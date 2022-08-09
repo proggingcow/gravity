@@ -31,8 +31,8 @@ export var vert = "up"
 func _ready():
 	if face == "right":
 		$Sprite.scale = -1
-	move.x = abs(move.x)+1
-	move.y = abs(move.y)+1
+	move.x = abs(move.x)
+	move.y = abs(move.y)
 
 func _process(delta):
 	if face == "left":

@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/heli.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/pause.tscn" type="PackedScene" id=6]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="blob" parent="." instance=ExtResource( 2 )]
+position = Vector2( 573, 532 )
+
+[node name="Heli" parent="." instance=ExtResource( 1 )]
+position = Vector2( 573, 550 )
+move = Vector2( 0, 6 )
+
+[node name="Sprite" parent="." instance=ExtResource( 3 )]
+position = Vector2( 498, 701 )
+
+[node name="Sprite2" parent="." instance=ExtResource( 3 )]
+position = Vector2( -462.5, 664 )
+scale = Vector2( 0.991699, 240 )
+
+[node name="Sprite3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 943.5, 664 )
+scale = Vector2( 0.342285, 240 )
+
+[node name="Sprite4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 1965, 294 )
+scale = Vector2( 0.991211, 724 )
+
+[node name="Sprite5" parent="." instance=ExtResource( 3 )]
+position = Vector2( -483, -66 )
+scale = Vector2( 0.97168, 240 )
+
+[node name="Sprite6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 976.5, -66 )
+scale = Vector2( 0.310059, 240 )
+
+[node name="Spike" parent="." instance=ExtResource( 4 )]
+position = Vector2( 313, 422 )
+rotation = -1.57212
+scale = Vector2( 2.33326, 15.453 )
+
+[node name="Spike2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 614, 420 )
+scale = Vector2( 2.33326, 12.413 )
+
+[node name="Spike9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 803, 278 )
+rotation = 3.14159
+scale = Vector2( 2.33326, 12.413 )
+
+[node name="Sprite7" parent="." instance=ExtResource( 3 )]
+position = Vector2( -971, 288 )
+scale = Vector2( 0.991211, 724 )
+
+[node name="Spike3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 587, 91 )
+rotation = -1.91288
+scale = Vector2( 2.33326, 15.453 )
+
+[node name="Spike4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 182, 267 )
+scale = Vector2( 2.33326, 15.453 )
+
+[node name="Spike5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 264, 160 )
+rotation = 3.14159
+scale = Vector2( 2.33326, 15.453 )
+
+[node name="Spike6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 540, 389 )
+scale = Vector2( 2.33326, 15.453 )
+
+[node name="Spike7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 455, 279 )
+scale = Vector2( 2.33326, 15.453 )
+
+[node name="ExitArea" parent="." instance=ExtResource( 5 )]
+position = Vector2( 587, -94 )
+scale = Vector2( 3, 1 )
+target = "finish"
+
+[node name="Spike8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 670, 202 )
+rotation = -1.91288
+scale = Vector2( 2.33326, 15.453 )
+
+[node name="Spike10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 849, 387 )
+rotation = -1.5708
+scale = Vector2( 2.333, 5 )
+
+[node name="Spike11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 875, 240 )
+rotation = -0.104997
+scale = Vector2( 2.33326, 15.453 )
+
+[node name="Pause Control" parent="." instance=ExtResource( 6 )]

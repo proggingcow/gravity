@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/vine.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/water.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/pause.tscn" type="PackedScene" id=8]
 
 [node name="Node2D" type="Node2D"]
 
@@ -201,6 +202,8 @@ show_behind_parent = true
 position = Vector2( 1020, -367 )
 scale = Vector2( 19, 5 )
 flow = Vector2( 2, -3 )
+
+[node name="Pause Control" parent="." instance=ExtResource( 8 )]
 
 [editable path="Sprite15"]
 [editable path="Sprite18"]

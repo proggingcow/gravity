@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://finish.gd" type="Script" id=1]
 [ext_resource path="res://assets/finish-parts/1.png" type="Texture" id=2]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=4]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
@@ -13,3 +14,13 @@ centered = false
 
 [node name="ExitArea" parent="." instance=ExtResource( 3 )]
 position = Vector2( 516, 374 )
+
+[node name="blob" parent="." instance=ExtResource( 4 )]
+position = Vector2( -686, 359 )
+
+[node name="Button" type="Button" parent="."]
+show_behind_parent = true
+margin_left = -127.0
+margin_top = -85.0
+margin_right = 1140.0
+margin_bottom = 682.0

@@ -17,13 +17,13 @@ func _process(_delta):
 		if $Sprite3.scale.x == -1:
 			$Sprite3.scale.x = 1
 		if $Feet.get_overlapping_bodies().size()>0:
-			apply_central_impulse(Vector2(-7,3))
+			apply_central_impulse(Vector2(-5,1))
 			x = true
 			t=true
 	if position.y >700:
 		get_tree().reload_current_scene()
 	if Input.is_key_pressed(KEY_DOWN):
-		apply_central_impulse(Vector2(0,1))
+		apply_central_impulse(Vector2(0,2))
 		if $water_zone.get_overlapping_areas().size() != 0:
 			apply_central_impulse(Vector2(0,3))
 	if Input.is_key_pressed(KEY_UP):
@@ -45,7 +45,7 @@ func _process(_delta):
 		if $Sprite3.scale.x == 1:
 			$Sprite3.scale.x = -1
 		if $Feet.get_overlapping_bodies().size()>0:
-			apply_central_impulse(Vector2(7,3))
+			apply_central_impulse(Vector2(5,1))
 			x = true
 			t=true
 	if x:

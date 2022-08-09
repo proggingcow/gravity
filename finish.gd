@@ -14,5 +14,5 @@ func _ready():
 	file.close()
 
 func _process(delta):
-	if Input.is_key_pressed(KEY_SPACE):
+	if Input.is_key_pressed(KEY_SPACE) or $Button.pressed:
 		get_tree().change_scene("res://scenes/levels/level_chooser.tscn")

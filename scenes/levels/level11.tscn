@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/exitwithoutfullscreen.gd" type="Script" id=4]
+[ext_resource path="res://scenes/pause.tscn" type="PackedScene" id=5]
 
 [node name="Node2D" type="Node2D"]
 
@@ -50,3 +51,5 @@ scale = Vector2( 0.027832, 347 )
 position = Vector2( 894, 671 )
 script = ExtResource( 4 )
 target = "slevel2"
+
+[node name="Pause Control" parent="." instance=ExtResource( 5 )]

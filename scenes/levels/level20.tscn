@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://scenes/ghost.tscn" type="PackedScene" id=9]
 [ext_resource path="res://scenes/exitwithoutfullscreen.gd" type="Script" id=10]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/pause.tscn" type="PackedScene" id=12]
 
 [sub_resource type="PhysicsMaterial" id=1]
 friction = 0.0
@@ -121,7 +122,7 @@ scale = Vector2( 0.0209961, 172 )
 
 [node name="ExitArea" parent="." instance=ExtResource( 11 )]
 position = Vector2( -76, 481 )
-target = "level_chooser"
+target = "level21"
 
 [node name="ExitArea2" parent="." instance=ExtResource( 11 )]
 position = Vector2( 1102, 132 )
@@ -144,3 +145,5 @@ scale = Vector2( 0.0649414, 288 )
 [node name="vine2" parent="." instance=ExtResource( 6 )]
 position = Vector2( 379, 408 )
 scale = Vector2( 4.16, 15.76 )
+
+[node name="Pause Control" parent="." instance=ExtResource( 12 )]

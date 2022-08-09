@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=3]
 [ext_resource path="res://scenes/box.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/pause.tscn" type="PackedScene" id=6]
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( -1, 0 )
@@ -46,17 +47,17 @@ scale = Vector2( 0.293818, 71 )
 position = Vector2( 626, 553 )
 
 [node name="Sprite5" parent="." instance=ExtResource( 3 )]
-position = Vector2( 377, 489.5 )
-scale = Vector2( 0.033966, 17.0005 )
+position = Vector2( 377, 493.5 )
+scale = Vector2( 0.033966, 9.00026 )
 
 [node name="Sprite6" parent="." instance=ExtResource( 3 )]
-position = Vector2( 248, 444 )
-scale = Vector2( 0.0234985, 34.5 )
+position = Vector2( 248, 447.125 )
+scale = Vector2( 0.0234985, 28.25 )
 
 [node name="Sprite7" parent="." instance=ExtResource( 3 )]
-position = Vector2( 502.341, 245.341 )
+position = Vector2( 489.231, 258.451 )
 rotation = -0.785398
-scale = Vector2( 0.187012, -25.8631 )
+scale = Vector2( 0.205118, -25.8631 )
 
 [node name="Sprite9" parent="." instance=ExtResource( 3 )]
 position = Vector2( 979.651, 546.485 )
@@ -91,3 +92,13 @@ scale = Vector2( 0.0476277, 22.1308 )
 [node name="ExitArea" parent="." instance=ExtResource( 5 )]
 position = Vector2( 1092, 450 )
 target = "level6"
+
+[node name="Sprite8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 227.969, 426.625 )
+scale = Vector2( 0.00393675, 69.25 )
+
+[node name="Sprite15" parent="." instance=ExtResource( 3 )]
+position = Vector2( 269.469, 457.625 )
+scale = Vector2( 0.0444641, 7.25001 )
+
+[node name="Pause Control" parent="." instance=ExtResource( 6 )]
