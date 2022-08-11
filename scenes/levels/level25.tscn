@@ -1,0 +1,65 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/pause.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/ceartainonly.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/heli.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/box.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=7]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="blob" parent="." instance=ExtResource( 3 )]
+position = Vector2( 343, 477 )
+
+[node name="Pause Control" parent="." instance=ExtResource( 2 )]
+
+[node name="Sprite" parent="." instance=ExtResource( 1 )]
+position = Vector2( 519, 695 )
+
+[node name="ceartainonly" parent="." instance=ExtResource( 4 )]
+position = Vector2( 991.563, 437 )
+scale = Vector2( 0.0326537, 6.24998 )
+
+[node name="Heli" parent="." instance=ExtResource( 5 )]
+position = Vector2( 984, 545 )
+move = Vector2( 0, 3 )
+
+[node name="Sprite2" parent="." instance=ExtResource( 1 )]
+position = Vector2( -781, 508 )
+scale = Vector2( 0.991211, 154 )
+
+[node name="Sprite5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 430, -58.9999 )
+
+[node name="Sprite7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 846, 440.25 )
+scale = Vector2( 0.109375, 16.4999 )
+
+[node name="Sprite8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2026, 296.5 )
+scale = Vector2( 0.991211, 663 )
+
+[node name="ceartainonly2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 928, 505.531 )
+scale = Vector2( 0.0213622, 117.062 )
+
+[node name="ceartainonly3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 587.437, 459.797 )
+scale = Vector2( 0.143005, -20.5313 )
+
+[node name="RigidBody2D" parent="." instance=ExtResource( 6 )]
+position = Vector2( 737, 406 )
+
+[node name="Sprite9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 333, 439.75 )
+scale = Vector2( 0.107422, 17.5 )
+
+[node name="Sprite3" parent="." instance=ExtResource( 1 )]
+position = Vector2( -781, 88.5 )
+scale = Vector2( 0.991211, 449 )
+
+[node name="ExitArea" parent="." instance=ExtResource( 7 )]
+position = Vector2( -91, 374 )
+scale = Vector2( 0.727324, 36.6586 )

@@ -41,7 +41,7 @@ func _process(delta):
 		apply_central_impulse(Vector2(0,-move.y))
 	if face == "right":
 		apply_central_impulse(Vector2(move.x,0))
-	if face == "down":
+	if vert == "down":
 		apply_central_impulse(Vector2(0,move.y))
 	if if_over($top):
 		vert = "down"

@@ -11,6 +11,7 @@ gradient = SubResource( 1 )
 extents = Vector2( 1024, 0.5 )
 
 [node name="ceartainonly" type="Sprite"]
+show_behind_parent = true
 scale = Vector2( 0.603027, 96.5 )
 texture = SubResource( 2 )
 

@@ -100,3 +100,8 @@ rotation = -0.104997
 scale = Vector2( 2.33326, 15.453 )
 
 [node name="Pause Control" parent="." instance=ExtResource( 6 )]
+
+[node name="Spike12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 920, 440 )
+rotation = -1.5708
+scale = Vector2( 2.333, 5 )
