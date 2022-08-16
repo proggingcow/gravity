@@ -1,0 +1,115 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/heli.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/lava.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/pause.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/ceartainonly.tscn" type="PackedScene" id=7]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="blob" parent="." instance=ExtResource( 2 )]
+position = Vector2( 522, 314 )
+
+[node name="Camera2D" type="Camera2D" parent="blob"]
+current = true
+limit_left = 0
+limit_top = -500
+limit_right = 1024
+limit_bottom = 600
+editor_draw_limits = true
+
+[node name="Sprite4" parent="." instance=ExtResource( 1 )]
+position = Vector2( -937, -2024.5 )
+scale = Vector2( 0.959961, 5767 )
+
+[node name="Sprite5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2020, -2008 )
+scale = Vector2( 0.991211, 5529 )
+
+[node name="Heli" parent="." instance=ExtResource( 3 )]
+position = Vector2( 635, 348 )
+move = Vector2( 0, 3 )
+
+[node name="Heli2" parent="." instance=ExtResource( 3 )]
+position = Vector2( 328, 345 )
+move = Vector2( 0, 3 )
+
+[node name="Heli3" parent="." instance=ExtResource( 3 )]
+position = Vector2( 393, 345 )
+move = Vector2( 0, 3 )
+
+[node name="Heli4" parent="." instance=ExtResource( 3 )]
+position = Vector2( 459, 345 )
+move = Vector2( 0, 3 )
+
+[node name="Heli5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 525, 348 )
+move = Vector2( 0, 3 )
+
+[node name="Heli6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 690, 346 )
+move = Vector2( 0, 3 )
+
+[node name="Heli7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 580, 348 )
+move = Vector2( 0, 3 )
+
+[node name="Area2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 530, 921 )
+scale = Vector2( 11, 7 )
+flow = Vector2( 0, -2 )
+rise = Vector2( 0, -0.3 )
+
+[node name="Pause Control" parent="." instance=ExtResource( 6 )]
+
+[node name="ExitArea" parent="." instance=ExtResource( 5 )]
+position = Vector2( 556, -615 )
+scale = Vector2( 19.76, 1 )
+target = "finish"
+
+[node name="Heli11" parent="." instance=ExtResource( 3 )]
+position = Vector2( 801, 341 )
+move = Vector2( 0, 3 )
+
+[node name="Heli12" parent="." instance=ExtResource( 3 )]
+position = Vector2( 856, 339 )
+move = Vector2( 0, 3 )
+
+[node name="Heli13" parent="." instance=ExtResource( 3 )]
+position = Vector2( 746, 341 )
+move = Vector2( 0, 3 )
+
+[node name="Heli15" parent="." instance=ExtResource( 3 )]
+position = Vector2( 201, 347 )
+move = Vector2( 0, 3 )
+
+[node name="Heli16" parent="." instance=ExtResource( 3 )]
+position = Vector2( 920, 339 )
+move = Vector2( 0, 3 )
+
+[node name="Heli17" parent="." instance=ExtResource( 3 )]
+position = Vector2( 140, 341 )
+move = Vector2( 0, 3 )
+
+[node name="Heli14" parent="." instance=ExtResource( 3 )]
+position = Vector2( 264, 347 )
+move = Vector2( 0, 3 )
+
+[node name="ceartainonly" parent="." instance=ExtResource( 7 )]
+position = Vector2( 303, 104 )
+scale = Vector2( 0.0388182, 96.5 )
+
+[node name="ceartainonly2" parent="." instance=ExtResource( 7 )]
+position = Vector2( 800, -134 )
+scale = Vector2( 0.0388182, 96.5 )
+
+[node name="ceartainonly3" parent="." instance=ExtResource( 7 )]
+position = Vector2( 176, -255 )
+scale = Vector2( 0.0388182, 96.5 )
+
+[node name="ceartainonly4" parent="." instance=ExtResource( 7 )]
+position = Vector2( 541.5, -501 )
+scale = Vector2( 0.177246, 96.5 )

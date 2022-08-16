@@ -6,6 +6,7 @@
 extents = Vector2( 43.75, 38.5 )
 
 [node name="ExitArea" type="Area2D"]
+pause_mode = 2
 collision_layer = 32
 collision_mask = 32
 script = ExtResource( 1 )

@@ -7,10 +7,8 @@
 collision_layer = 513
 script = ExtResource( 2 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PoolVector2Array( -50, -51, -47, -48, -43, -47, -40, -50, -34, -50, -28, -46, -22, -50, -11, -50, -9, -47, 0, -47, 3, -50, 16, -50, 18, -48, 25, -48, 32, -50, 37, -50, 44, -46, 48, -46, 50, -50, 50, 50, -50, 50 )
-
 [node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 1 )
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -18,4 +16,9 @@ collision_layer = 0
 collision_mask = 8
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-polygon = PoolVector2Array( -50, -51, -47, -48, -43, -47, -40, -50, -34, -50, -28, -46, -22, -50, -11, -50, -9, -47, 0, -47, 3, -50, 16, -50, 18, -48, 25, -48, 32, -50, 37, -50, 44, -46, 48, -46, 50, -50, 50, 50, -50, 50 )
+visible = false
+polygon = PoolVector2Array( -50, -47, -48, -49, -44, -47, -39, -48, -33, -48, -30, -49, -29, -48, -28, -48, -11, -50, -7, -49, 0, -49, 5, -48, 14.1461, -48, 18, -50, 19, -49, 22, -50, 23, -49, 27, -49, 29, -48, 33, -48, 35, -49, 39, -49, 42, -48, 47, -48, 50, -50, 50, 50, -50, 50 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PoolVector2Array( -50, -47, -48, -49, -44, -47, -39, -48, -33, -48, -30, -49, -29, -48, -28, -48, -11, -50, -7, -49, 0, -49, 5, -48, 14.1461, -48, 18, -50, 19, -49, 22, -50, 23, -49, 27, -49, 29, -48, 33, -48, 35, -49, 39, -49, 42, -48, 47, -48, 50, -50, 50, 50, -50, 50 )

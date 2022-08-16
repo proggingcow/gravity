@@ -91,23 +91,23 @@ position = Vector2( 45.25, 559 )
 scale = Vector2( 1.00952, 104 )
 
 [node name="Sprite7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 738.5, 348 )
-scale = Vector2( 0.112793, 30 )
+position = Vector2( 786.5, 348 )
+scale = Vector2( 0.159668, 30 )
 
 [node name="Sprite8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 989, 256 )
-scale = Vector2( 0.137695, 46 )
+position = Vector2( 1032, 256 )
+scale = Vector2( 0.095703, 46 )
 
 [node name="Area2D" parent="." instance=ExtResource( 7 )]
-position = Vector2( 789, 324 )
-scale = Vector2( 15, 1 )
+position = Vector2( 823, 318 )
+scale = Vector2( 19.051, 1 )
 
 [node name="Sprite9" parent="Area2D" instance=ExtResource( 8 )]
-position = Vector2( -25.3666, 77 )
-scale = Vector2( 0.0423503, 337.046 )
+position = Vector2( -25.5414, 86.2615 )
+scale = Vector2( 0.0423713, 342.523 )
 
 [node name="Sprite10" parent="Area2D" instance=ExtResource( 2 )]
-position = Vector2( -8.56667, -23.5 )
+position = Vector2( -8.45312, -26 )
 scale = Vector2( 0.000358073, 123 )
 
 [node name="Node2D" parent="." instance=ExtResource( 9 )]

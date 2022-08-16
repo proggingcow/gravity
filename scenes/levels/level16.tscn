@@ -70,7 +70,7 @@ scale = Vector2( 7, 20 )
 rise = Vector2( 1, 0 )
 
 [node name="ExitArea" parent="Area2D2" instance=ExtResource( 4 )]
-position = Vector2( -19.788, -128.469 )
+position = Vector2( -1.12751, -127.979 )
 scale = Vector2( 0.297143, 0.982 )
 script = ExtResource( 6 )
 target = "slevel3"

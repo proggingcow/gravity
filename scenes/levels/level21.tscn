@@ -104,3 +104,11 @@ position = Vector2( 2885, 376 )
 scale = Vector2( -11.4821, 39.2792 )
 
 [node name="Pause Control" parent="." instance=ExtResource( 8 )]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 69.0
+margin_top = 29.0
+margin_right = 529.0
+margin_bottom = 269.0
+custom_colors/default_color = Color( 0, 0, 0, 0.164706 )
+text = "hypnotism"
