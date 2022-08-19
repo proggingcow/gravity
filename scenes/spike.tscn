@@ -9,8 +9,9 @@ collision_mask = 8
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 show_behind_parent = true
-polygon = PoolVector2Array( -5, 10, 5, 10, 5, 6, 1, -9, -1, -9, -5, 6 )
+polygon = PoolVector2Array( -5, 10, 5, 10, 0, -9 )
 
 [node name="Sprite" type="Sprite" parent="."]
 show_behind_parent = true
+scale = Vector2( 0.25, 0.25 )
 texture = ExtResource( 1 )
