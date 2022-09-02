@@ -68,7 +68,7 @@ rise = Vector2( 0, -0.3 )
 [node name="ExitArea" parent="." instance=ExtResource( 5 )]
 position = Vector2( 556, -615 )
 scale = Vector2( 19.76, 1 )
-target = "finish"
+target = "level27"
 
 [node name="Heli11" parent="." instance=ExtResource( 3 )]
 position = Vector2( 801, 341 )

@@ -12,7 +12,6 @@ func _ready():
 # warning-ignore:unused_argument
 func _process(delta):
 	if p == false and get_overlapping_bodies().size() > 0:
-# warning-ignore:standalone_expression
-		p==true
+		p=true
 		$Sprite.texture = load("res://assets/pbutton.png")
 		add_child(mykid.duplicate())

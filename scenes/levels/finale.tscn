@@ -1,0 +1,161 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/exit.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/heli.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/lava.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/cbutton.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/button.tscn" type="PackedScene" id=7]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="blob" parent="." instance=ExtResource( 1 )]
+position = Vector2( 191, 466 )
+
+[node name="Camera2D" type="Camera2D" parent="blob"]
+current = true
+limit_left = 0
+limit_top = -2700
+limit_right = 5117
+limit_bottom = 600
+editor_draw_limits = true
+
+[node name="Sprite" parent="." instance=ExtResource( 2 )]
+position = Vector2( 394, 710 )
+scale = Vector2( 0.749023, 266 )
+
+[node name="Sprite2" parent="." instance=ExtResource( 2 )]
+position = Vector2( -167.5, -1060 )
+scale = Vector2( 0.200684, 3806 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 123.0
+margin_top = 73.0
+margin_right = 524.0
+margin_bottom = 97.0
+rect_scale = Vector2( 2, 2 )
+text = "This is the         , so things may work slightly differently"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 123.0
+margin_top = 73.0
+margin_right = 524.0
+margin_bottom = 97.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/default_color = Color( 0, 1, 0.913725, 1 )
+text = "                 finale"
+
+[node name="ExitArea" parent="." instance=ExtResource( 3 )]
+position = Vector2( -500, 4 )
+
+[node name="Sprite3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2003, -3.99998 )
+scale = Vector2( 2.31543, 114 )
+
+[node name="Sprite4" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2459, 655 )
+scale = Vector2( 0.138672, 266 )
+
+[node name="Heli" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1440, 514 )
+
+[node name="Heli2" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1725, 496 )
+
+[node name="Heli3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2027, 491 )
+
+[node name="Heli4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1289, 529 )
+
+[node name="Heli5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1584, 517 )
+
+[node name="Heli6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1876, 496 )
+
+[node name="Heli7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2178, 514 )
+
+[node name="Heli8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2256, 524 )
+
+[node name="Heli9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1795, 486 )
+
+[node name="Heli10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1953, 507 )
+
+[node name="Heli11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 2098, 498 )
+
+[node name="Heli17" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1358, 530 )
+
+[node name="Heli18" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1506, 515 )
+
+[node name="Heli19" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1654, 517 )
+
+[node name="Control" type="Control" parent="."]
+margin_left = 8774.0
+margin_top = 2877.0
+margin_right = 9341.0
+margin_bottom = 2917.0
+
+[node name="Control2" type="Control" parent="."]
+margin_left = 8302.0
+margin_top = -6595.0
+margin_right = 8869.0
+margin_bottom = -6555.0
+
+[node name="Sprite5" parent="." instance=ExtResource( 2 )]
+position = Vector2( 2870, 516.75 )
+scale = Vector2( 0.0654297, 50.5 )
+
+[node name="Sprite6" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3195, 459 )
+scale = Vector2( 0.0654297, 50.5 )
+
+[node name="Sprite7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3750, 593 )
+scale = Vector2( 0.0654297, 50.5 )
+
+[node name="Sprite8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 4643.5, 512.375 )
+scale = Vector2( 0.543457, 71.25 )
+
+[node name="Button" parent="." instance=ExtResource( 7 )]
+position = Vector2( 4159, 423 )
+scale = Vector2( 1, 10 )
+
+[node name="Sprite" parent="Button" index="0"]
+visible = false
+
+[node name="CButton" parent="Button" instance=ExtResource( 6 )]
+position = Vector2( -1639, -0.399994 )
+scale = Vector2( 1, 2 )
+
+[node name="Sprite" parent="Button/CButton" index="0"]
+visible = false
+
+[node name="Ob" parent="Button/CButton" instance=ExtResource( 5 )]
+position = Vector2( -611, -6 )
+rotation = 1.5708
+scale = Vector2( 0.3, 8 )
+flow = Vector2( 0, 0 )
+rise = Vector2( 2, 0 )
+
+[node name="Area2D2" parent="Button/CButton/Ob" instance=ExtResource( 5 )]
+position = Vector2( 0, -200 )
+rotation = 3.14159
+flow = Vector2( 0, 0 )
+
+[node name="Sprite9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 5183.5, -1123.5 )
+scale = Vector2( 0.0854493, 3457 )
+
+[editable path="Button"]
+[editable path="Button/CButton"]
