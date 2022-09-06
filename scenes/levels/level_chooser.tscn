@@ -61,8 +61,8 @@ scale = Vector2( 1, 2 )
 target = "level15"
 
 [node name="Sprite13" parent="." instance=ExtResource( 2 )]
-position = Vector2( -7.50001, 50.5 )
-scale = Vector2( 0.0327148, 717 )
+position = Vector2( -136, 50.5 )
+scale = Vector2( 0.158203, 717 )
 
 [node name="Sprite15" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1052, 191.5 )
@@ -83,8 +83,8 @@ script = ExtResource( 5 )
 target = "tutorial"
 
 [node name="Sprite16" parent="." instance=ExtResource( 2 )]
-position = Vector2( 64.5, 560 )
-scale = Vector2( 0.0913086, 178 )
+position = Vector2( 48, 560 )
+scale = Vector2( 0.107422, 178 )
 
 [node name="Sprite7" parent="." instance=ExtResource( 2 )]
 position = Vector2( 987.5, 560 )
@@ -103,16 +103,6 @@ margin_bottom = 585.0
 text = "world 3
 "
 
-[node name="RichTextLabel4" type="RichTextLabel" parent="."]
-show_behind_parent = true
-margin_left = 328.0
-margin_top = 47.0
-margin_right = 478.0
-margin_bottom = 128.0
-rect_scale = Vector2( 3, 3 )
-text = "
-finale in progress"
-
 [node name="Pause Control" parent="." instance=ExtResource( 6 )]
 
 [node name="Sprite14" parent="." instance=ExtResource( 2 )]
@@ -126,5 +116,11 @@ margin_top = 422.0
 margin_right = 101.0
 margin_bottom = 454.0
 rect_scale = Vector2( 2, 2 )
+custom_colors/default_color = Color( 0, 1, 0.913725, 1 )
 text = "finale
 "
+
+[node name="ExitArea2" parent="." instance=ExtResource( 3 )]
+position = Vector2( -68, 440 )
+script = ExtResource( 5 )
+target = "finale"

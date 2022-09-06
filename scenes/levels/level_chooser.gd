@@ -13,3 +13,5 @@ func _ready():
 		remove_child($Sprite2)
 	if number > 1.5:
 		remove_child($Sprite3)
+	if number > 2.5:
+		remove_child($Sprite14)
