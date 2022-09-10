@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://scenes/ceartainonly.tscn" type="PackedScene" id=8]
 [ext_resource path="res://scenes/levels/finale.gd" type="Script" id=9]
 [ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=10]
+[ext_resource path="res://scenes/const button.tscn" type="PackedScene" id=11]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 9 )
@@ -58,7 +59,8 @@ custom_colors/default_color = Color( 0, 1, 0.913725, 1 )
 text = "                 finale"
 
 [node name="ExitArea" parent="." instance=ExtResource( 3 )]
-position = Vector2( -500, 4 )
+position = Vector2( -859, -104 )
+target = "finish"
 
 [node name="Sprite3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2003, -3.99998 )
@@ -206,6 +208,57 @@ scale = Vector2( 5.41171, 34.5451 )
 position = Vector2( 4897, 84 )
 rotation = 4.62338
 scale = Vector2( 5.41171, 34.5451 )
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 3588.0
+margin_top = -580.0
+margin_right = 3989.0
+margin_bottom = -445.0
+rect_scale = Vector2( 2, 2 )
+text = "The panda is waiting for your lesson"
+
+[node name="const button" parent="." instance=ExtResource( 11 )]
+position = Vector2( 4349, -72 )
+
+[node name="Ob" parent="const button" instance=ExtResource( 10 )]
+position = Vector2( -315, -19 )
+scale = Vector2( 2, 3 )
+
+[node name="Spike" parent="const button/Ob" instance=ExtResource( 10 )]
+position = Vector2( -10, 0 )
+
+[node name="Spike" parent="const button/Ob/Spike" instance=ExtResource( 10 )]
+position = Vector2( -10, 0 )
+
+[node name="Spike" parent="const button/Ob/Spike/Spike" instance=ExtResource( 10 )]
+position = Vector2( -10, 0 )
+
+[node name="Spike" parent="const button/Ob/Spike/Spike/Spike" instance=ExtResource( 10 )]
+position = Vector2( -10, 0 )
+
+[node name="Spike" parent="const button/Ob/Spike/Spike/Spike/Spike" instance=ExtResource( 10 )]
+position = Vector2( -10, 0 )
+
+[node name="Spike" parent="const button/Ob/Spike/Spike/Spike/Spike/Spike" instance=ExtResource( 10 )]
+position = Vector2( -10, 0 )
+
+[node name="Spike" parent="const button/Ob/Spike/Spike/Spike/Spike/Spike/Spike" instance=ExtResource( 10 )]
+position = Vector2( -10, 0 )
+
+[node name="Spike" parent="const button/Ob/Spike/Spike/Spike/Spike/Spike/Spike/Spike" instance=ExtResource( 10 )]
+position = Vector2( -10, 0 )
+
+[node name="Spike" parent="const button/Ob/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike" instance=ExtResource( 10 )]
+position = Vector2( -10, 0 )
+
+[node name="Spike" parent="const button/Ob/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike" instance=ExtResource( 10 )]
+position = Vector2( -10, 0 )
+
+[node name="Spike" parent="const button/Ob/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike" instance=ExtResource( 10 )]
+position = Vector2( -10, 0 )
+
+[node name="Spike" parent="const button/Ob/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike" instance=ExtResource( 10 )]
+position = Vector2( -10, 0 )
 
 [editable path="Button"]
 [editable path="Button/CButton"]

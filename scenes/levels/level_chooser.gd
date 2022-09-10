@@ -15,3 +15,10 @@ func _ready():
 		remove_child($Sprite3)
 	if number > 2.5:
 		remove_child($Sprite14)
+
+func _process(delta):
+	if $CButton.p == true:
+		var file = File.new()
+		file.open("res://../.blobjumpprogress.txt", file.WRITE)
+		file.store_line(str(0))
+		file.close()

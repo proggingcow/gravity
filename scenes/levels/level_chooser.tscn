@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://scenes/levels/level_chooser.gd" type="Script" id=4]
 [ext_resource path="res://scenes/exitwithoutfullscreen.gd" type="Script" id=5]
 [ext_resource path="res://scenes/pause.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/ceartainonly.tscn" type="PackedScene" id=7]
+[ext_resource path="res://scenes/cbutton.tscn" type="PackedScene" id=8]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 4 )
@@ -91,8 +93,8 @@ position = Vector2( 987.5, 560 )
 scale = Vector2( 0.105957, 178 )
 
 [node name="Sprite8" parent="." instance=ExtResource( 2 )]
-position = Vector2( 674.5, 560 )
-scale = Vector2( 0.108887, 178 )
+position = Vector2( 604, 560 )
+scale = Vector2( 0.0400392, 178 )
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="."]
 show_behind_parent = true
@@ -124,3 +126,23 @@ text = "finale
 position = Vector2( -68, 440 )
 script = ExtResource( 5 )
 target = "finale"
+
+[node name="Sprite9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 746.5, 560 )
+scale = Vector2( 0.0385744, 178 )
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="."]
+show_behind_parent = true
+margin_left = 647.0
+margin_top = 496.0
+margin_right = 732.0
+margin_bottom = 577.0
+text = "reset progress
+"
+
+[node name="CButton" parent="." instance=ExtResource( 8 )]
+visible = false
+position = Vector2( 676, 591 )
+scale = Vector2( 3.7, 1 )
+
+[node name="Ob" parent="CButton" instance=ExtResource( 7 )]
