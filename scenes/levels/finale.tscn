@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
@@ -11,12 +11,14 @@
 [ext_resource path="res://scenes/levels/finale.gd" type="Script" id=9]
 [ext_resource path="res://scenes/spike.tscn" type="PackedScene" id=10]
 [ext_resource path="res://scenes/const button.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/ghost.tscn" type="PackedScene" id=12]
+[ext_resource path="res://scenes/aiblob.tscn" type="PackedScene" id=13]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 9 )
 
 [node name="blob" parent="." instance=ExtResource( 1 )]
-position = Vector2( 430, 470 )
+position = Vector2( 68, 555 )
 
 [node name="c1" type="Camera2D" parent="blob"]
 current = true
@@ -132,10 +134,6 @@ scale = Vector2( 0.0654297, 50.5 )
 position = Vector2( 3195, 459 )
 scale = Vector2( 0.0654297, 50.5 )
 
-[node name="Sprite7" parent="." instance=ExtResource( 2 )]
-position = Vector2( 3750, 593 )
-scale = Vector2( 0.0654297, 50.5 )
-
 [node name="Sprite8" parent="." instance=ExtResource( 2 )]
 position = Vector2( 4564, 558.875 )
 scale = Vector2( 0.46582, 164.25 )
@@ -189,11 +187,6 @@ visible = false
 [node name="ceartainonly" parent="Area2D" instance=ExtResource( 8 )]
 position = Vector2( -1.948, 1.06247 )
 scale = Vector2( 0.0359076, 16.1249 )
-
-[node name="ceartainonly" parent="." instance=ExtResource( 8 )]
-position = Vector2( 4551.75, -331.665 )
-rotation = -0.679531
-scale = Vector2( 0.485958, 96.5 )
 
 [node name="Sprite11" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2683.5, -641 )
@@ -259,6 +252,53 @@ position = Vector2( -10, 0 )
 
 [node name="Spike" parent="const button/Ob/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike/Spike" instance=ExtResource( 10 )]
 position = Vector2( -10, 0 )
+
+[node name="ceartainonly2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 4326, 464 )
+rotation = 1.5708
+scale = Vector2( 0.485958, 96.5 )
+
+[node name="Ob" parent="." instance=ExtResource( 2 )]
+position = Vector2( 3750, 593 )
+scale = Vector2( 0.0654297, 50.5 )
+
+[node name="Node2D" parent="." instance=ExtResource( 12 )]
+position = Vector2( 4654, 263 )
+scale = Vector2( 2, 2 )
+move = 1.5
+
+[node name="Node2D2" parent="." instance=ExtResource( 12 )]
+position = Vector2( 4776, 378 )
+move = 3.0
+
+[node name="Node2D3" parent="." instance=ExtResource( 12 )]
+position = Vector2( 4830, 217 )
+scale = Vector2( 2, 2 )
+move = 1.5
+
+[node name="RigidBody2D" parent="." instance=ExtResource( 13 )]
+position = Vector2( 3718, -76 )
+
+[node name="const button2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 3451, -72 )
+
+[node name="Ob" parent="const button2" instance=ExtResource( 8 )]
+position = Vector2( 1100.75, -259.665 )
+rotation = -0.679531
+scale = Vector2( 0.485958, 96.5 )
+
+[node name="ceartainonly3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 3364, -296.86 )
+rotation = 1.5708
+scale = Vector2( 0.320087, 96.5 )
+
+[node name="const button3" parent="." instance=ExtResource( 11 )]
+position = Vector2( 3451, -72 )
+mode = "create"
+
+[node name="Ob" parent="const button3" instance=ExtResource( 2 )]
+position = Vector2( 466, -40 )
+scale = Vector2( 0.12793, 14 )
 
 [editable path="Button"]
 [editable path="Button/CButton"]
