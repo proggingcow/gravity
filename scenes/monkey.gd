@@ -58,8 +58,10 @@ func _process(_delta):
 	if !t:
 		$step.playing = false
 	t=false
-	if Input.is_key_pressed(KEY_Q):
-		get_tree().quit()
+	
 
 func _on_Suround_area_entered(_b):
 	get_tree().reload_current_scene()
+
+
+
