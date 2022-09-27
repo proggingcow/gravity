@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
@@ -16,6 +16,7 @@
 [ext_resource path="res://scenes/pause.tscn" type="PackedScene" id=14]
 [ext_resource path="res://scenes/deathball.tscn" type="PackedScene" id=15]
 [ext_resource path="res://scenes/vine.tscn" type="PackedScene" id=16]
+[ext_resource path="res://scenes/box.tscn" type="PackedScene" id=17]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 9 )
@@ -262,6 +263,7 @@ rotation = 1.5708
 scale = Vector2( 0.485958, 96.5 )
 
 [node name="Ob" parent="." instance=ExtResource( 2 )]
+show_behind_parent = true
 position = Vector2( 3750, 593 )
 scale = Vector2( 0.0654297, 50.5 )
 
@@ -327,6 +329,12 @@ position = Vector2( 1141, -276.14 )
 rotation = -1.57079
 scale = Vector2( 0.320087, 96.5 )
 
+[node name="Ob" parent="const button4" instance=ExtResource( 2 )]
+show_behind_parent = true
+position = Vector2( 1175, -244.622 )
+rotation = -3.14159
+scale = Vector2( 0.01416, 543.25 )
+
 [node name="const button5" parent="." instance=ExtResource( 11 )]
 show_behind_parent = true
 position = Vector2( 4505, -573 )
@@ -344,6 +352,56 @@ scale = Vector2( 0.187421, 2.35494 )
 [node name="ceartainonly2" parent="const button5/Ob" instance=ExtResource( 8 )]
 position = Vector2( 1214.56, 0.678 )
 scale = Vector2( 0.187, 2.355 )
+
+[node name="Sprite" parent="const button5/Ob" instance=ExtResource( 2 )]
+position = Vector2( 28597.6, -18.7228 )
+scale = Vector2( 1.15744, 1.37951 )
+
+[node name="Ob2" parent="." instance=ExtResource( 2 )]
+show_behind_parent = true
+position = Vector2( 3330, -111.875 )
+scale = Vector2( 0.01416, 110.25 )
+
+[node name="Ob3" parent="." instance=ExtResource( 2 )]
+show_behind_parent = true
+position = Vector2( 3419.25, -154 )
+scale = Vector2( 0.101318, 30 )
+
+[node name="RigidBody2D4" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2816, -200 )
+
+[node name="RigidBody2D5" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2816, -200 )
+
+[node name="RigidBody2D6" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2816, -200 )
+
+[node name="RigidBody2D7" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2816, -200 )
+
+[node name="RigidBody2D8" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2816, -200 )
+
+[node name="RigidBody2D9" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2816, -200 )
+
+[node name="RigidBody2D10" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2816, -200 )
+
+[node name="RigidBody2D11" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2816, -200 )
+
+[node name="RigidBody2D12" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2816, -200 )
+
+[node name="RigidBody2D13" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2816, -200 )
+
+[node name="RigidBody2D14" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2816, -200 )
+
+[node name="RigidBody2D15" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2816, -200 )
 
 [editable path="Button"]
 [editable path="Button/CButton"]
