@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://scenes/blob.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/wall.tscn" type="PackedScene" id=2]
@@ -17,9 +17,12 @@
 [ext_resource path="res://scenes/deathball.tscn" type="PackedScene" id=15]
 [ext_resource path="res://scenes/vine.tscn" type="PackedScene" id=16]
 [ext_resource path="res://scenes/box.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scenes/water.tscn" type="PackedScene" id=18]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 9 )
+pos = Vector2( 2400, -250 )
+change = true
 
 [node name="blob" parent="." instance=ExtResource( 1 )]
 position = Vector2( 68, 555 )
@@ -65,7 +68,8 @@ custom_colors/default_color = Color( 0, 1, 0.913725, 1 )
 text = "                 finale"
 
 [node name="ExitArea" parent="." instance=ExtResource( 3 )]
-position = Vector2( -859, -104 )
+position = Vector2( 125, -664 )
+scale = Vector2( 2, 1 )
 target = "finish"
 
 [node name="Sprite3" parent="." instance=ExtResource( 2 )]
@@ -218,7 +222,7 @@ text = "The panda is waiting for your lesson"
 position = Vector2( 4349, -72 )
 
 [node name="Ob" parent="const button" instance=ExtResource( 10 )]
-position = Vector2( -315, -19 )
+position = Vector2( -315, -17 )
 scale = Vector2( 2, 3 )
 
 [node name="Spike" parent="const button/Ob" instance=ExtResource( 10 )]
@@ -368,40 +372,417 @@ position = Vector2( 3419.25, -154 )
 scale = Vector2( 0.101318, 30 )
 
 [node name="RigidBody2D4" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2816, -200 )
+position = Vector2( 2675, -200 )
 
 [node name="RigidBody2D5" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2816, -200 )
+position = Vector2( 2675, -200 )
+angular_velocity = 40.0
 
 [node name="RigidBody2D6" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2816, -200 )
+position = Vector2( 2675, -200 )
 
 [node name="RigidBody2D7" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2816, -200 )
+position = Vector2( 2675, -200 )
 
 [node name="RigidBody2D8" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2816, -200 )
+position = Vector2( 2675, -200 )
 
 [node name="RigidBody2D9" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2816, -200 )
+position = Vector2( 2675, -200 )
 
 [node name="RigidBody2D10" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2816, -200 )
+position = Vector2( 2675, -200 )
 
 [node name="RigidBody2D11" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2816, -200 )
+position = Vector2( 2675, -200 )
 
 [node name="RigidBody2D12" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2816, -200 )
+position = Vector2( 2675, -200 )
+angular_velocity = 40.0
 
 [node name="RigidBody2D13" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2816, -200 )
+position = Vector2( 2675, -200 )
 
 [node name="RigidBody2D14" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2816, -200 )
+position = Vector2( 2675, -200 )
 
 [node name="RigidBody2D15" parent="." instance=ExtResource( 17 )]
-position = Vector2( 2816, -200 )
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D16" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D17" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D18" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D19" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D20" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D21" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D22" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+angular_velocity = 40.0
+
+[node name="RigidBody2D23" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D24" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D25" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D26" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D27" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D28" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D29" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D30" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D31" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D32" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D33" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D34" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+angular_velocity = 40.0
+
+[node name="RigidBody2D35" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D36" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D37" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D38" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D39" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+angular_velocity = 40.0
+
+[node name="RigidBody2D40" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D41" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D42" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D43" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D44" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D45" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D46" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D47" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+angular_velocity = 40.0
+
+[node name="RigidBody2D48" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D49" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D50" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D51" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -200 )
+
+[node name="RigidBody2D52" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D53" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+angular_velocity = 40.0
+
+[node name="RigidBody2D54" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D55" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D56" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D57" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D58" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D59" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D60" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+angular_velocity = 40.0
+
+[node name="RigidBody2D61" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D62" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D63" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D64" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D65" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+angular_velocity = 40.0
+
+[node name="RigidBody2D66" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D67" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D68" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D69" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D70" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D71" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+angular_velocity = 40.0
+
+[node name="RigidBody2D72" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D73" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D74" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D75" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+angular_velocity = 40.0
+
+[node name="RigidBody2D76" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D77" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D78" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D79" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D80" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+angular_velocity = 40.0
+
+[node name="RigidBody2D81" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D82" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D83" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D84" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D85" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+angular_velocity = 40.0
+
+[node name="RigidBody2D86" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D87" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D88" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D89" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D90" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D91" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D92" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+angular_velocity = 40.0
+
+[node name="RigidBody2D93" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D94" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D95" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D96" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D97" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D98" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+
+[node name="RigidBody2D99" parent="." instance=ExtResource( 17 )]
+position = Vector2( 2675, -324 )
+angular_velocity = 40.0
+
+[node name="ceartainonly3" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2489, -324.092 )
+rotation = 1.5708
+scale = Vector2( 0.295743, 96.5 )
+
+[node name="ceartainonly4" parent="." instance=ExtResource( 8 )]
+position = Vector2( 2911, -324.092 )
+rotation = 1.5708
+scale = Vector2( 0.295743, 96.5 )
+
+[node name="Node2D4" type="Node2D" parent="."]
+show_behind_parent = true
+position = Vector2( 0, -600 )
+
+[node name="Area2D" parent="Node2D4" instance=ExtResource( 18 )]
+show_behind_parent = true
+position = Vector2( 2029, 276 )
+rotation = 1.5708
+scale = Vector2( 6, 6 )
+
+[node name="Area2D2" parent="Node2D4" instance=ExtResource( 18 )]
+show_behind_parent = true
+position = Vector2( 1429, 276 )
+rotation = -1.5708
+scale = Vector2( 6, 6 )
+flow = Vector2( 0, -3 )
+
+[node name="Sprite" parent="Node2D4" instance=ExtResource( 2 )]
+position = Vector2( 1818.88, 399.517 )
+rotation = -0.741765
+scale = Vector2( 0.284995, 105 )
+
+[node name="Sprite4" parent="Node2D4" instance=ExtResource( 2 )]
+position = Vector2( 2002.4, 184.679 )
+rotation = -0.741765
+scale = Vector2( 0.0111157, 173.814 )
+
+[node name="Sprite2" parent="Node2D4" instance=ExtResource( 2 )]
+position = Vector2( 2166.16, 326.078 )
+rotation = -0.741765
+scale = Vector2( 0.1521, 105 )
+
+[node name="Sprite3" parent="Node2D4" instance=ExtResource( 2 )]
+position = Vector2( 2273.95, 231.5 )
+scale = Vector2( 0.0468293, 455 )
+
+[node name="Spike" parent="Node2D4" instance=ExtResource( 10 )]
+position = Vector2( 2001, 488 )
+scale = Vector2( 7.12, 5.32 )
+
+[node name="Spike2" parent="Node2D4" instance=ExtResource( 10 )]
+position = Vector2( 2080, 58.0001 )
+rotation = 3.14159
+scale = Vector2( 7.12, 5.32 )
+
+[node name="Spike3" parent="Node2D4" instance=ExtResource( 10 )]
+position = Vector2( 2018, 158 )
+scale = Vector2( 7.12, 6.96 )
+
+[node name="Spike4" parent="Node2D4" instance=ExtResource( 10 )]
+position = Vector2( 1820, 92 )
+rotation = 3.97586
+scale = Vector2( 9.65213, 21.0063 )
+
+[node name="Spike6" parent="Node2D4" instance=ExtResource( 10 )]
+position = Vector2( 1713, 53.9999 )
+rotation = 3.97586
+scale = Vector2( 9.65213, 21.0063 )
+
+[node name="Spike5" parent="Node2D4" instance=ExtResource( 10 )]
+position = Vector2( 1816, 299 )
+rotation = 3.97586
+scale = Vector2( 9.65213, 21.0063 )
+
+[node name="vine" parent="Node2D4" instance=ExtResource( 16 )]
+position = Vector2( 853, 147 )
+rotation = 1.5708
+scale = Vector2( 5, 5 )
+
+[node name="vine2" parent="Node2D4/vine" instance=ExtResource( 16 )]
+position = Vector2( 0, 10 )
+
+[node name="vine3" parent="Node2D4/vine/vine2" instance=ExtResource( 16 )]
+position = Vector2( 0, 10 )
+
+[node name="vine4" parent="Node2D4/vine/vine2/vine3" instance=ExtResource( 16 )]
+position = Vector2( 0, 10 )
+
+[node name="vine5" parent="Node2D4/vine/vine2/vine3/vine4" instance=ExtResource( 16 )]
+position = Vector2( 0, 10 )
+
+[node name="vine6" parent="Node2D4/vine/vine2/vine3/vine4/vine5" instance=ExtResource( 16 )]
+position = Vector2( 0, 10 )
+
+[node name="vine7" parent="Node2D4/vine/vine2/vine3/vine4/vine5/vine6" instance=ExtResource( 16 )]
+position = Vector2( 0, 10 )
+
+[node name="vine8" parent="Node2D4/vine/vine2/vine3/vine4/vine5/vine6/vine7" instance=ExtResource( 16 )]
+position = Vector2( 0, 10 )
+
+[node name="vine9" parent="Node2D4/vine/vine2/vine3/vine4/vine5/vine6/vine7/vine8" instance=ExtResource( 16 )]
+position = Vector2( 0, 10 )
+
+[node name="vine10" parent="Node2D4/vine/vine2/vine3/vine4/vine5/vine6/vine7/vine8/vine9" instance=ExtResource( 16 )]
+position = Vector2( 0, 10 )
+
+[node name="vine2" parent="Node2D4" instance=ExtResource( 16 )]
+position = Vector2( 72, 72 )
+scale = Vector2( 9.67671, 14.0799 )
 
 [editable path="Button"]
 [editable path="Button/CButton"]

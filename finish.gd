@@ -10,7 +10,7 @@ extends Node2D
 func _ready():
 	var file = File.new()
 	file.open("res://progress.txt", file.WRITE)
-	file.store_line(str(3))
+	file.store_line(str(4))
 	file.close()
 
 func _process(delta):
