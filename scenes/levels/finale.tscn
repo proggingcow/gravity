@@ -21,8 +21,6 @@
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 9 )
-pos = Vector2( 2400, -250 )
-change = true
 
 [node name="blob" parent="." instance=ExtResource( 1 )]
 position = Vector2( 68, 555 )
